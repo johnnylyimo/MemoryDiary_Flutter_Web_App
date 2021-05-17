@@ -73,7 +73,7 @@ class _NavigationBarState extends State<NavigationBar>
 
   Widget mobileView() {
     return Container(
-      padding: EdgeInsets.only(right: 20.0),
+      padding: EdgeInsets.only(right: 20.0, top: 20.0),
       width: screenWidth,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
