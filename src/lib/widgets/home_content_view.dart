@@ -1,5 +1,6 @@
+import 'package:flutter/material.dart';
+
 class HomeContentView extends StatefulWidget {
-  const HomeContentView({Key key}) : super(key: key);
 
   @override
   _HomeContentViewState createState() => _HomeContentViewState();
