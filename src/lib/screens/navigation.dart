@@ -66,6 +66,8 @@ class _NavigationBarState extends State<NavigationBar>
   }
 
   Widget mobileView() {
-    return Container();
+    return Container(
+      height: screenHeight * 0.8,
+    );
   }
 }
