@@ -94,37 +94,39 @@ class _NavigationBarState extends State<NavigationBar>
 
   Widget drawer() {
     return Drawer(
-      child: ListView(
-        children: [
-              Align(
-                alignment: Alignment(0.9, -0.5),
-                child: IconButton(
-                  hoverColor: Colors.transparent,
-                  icon: Icon(
-                    Icons.close,
-                    size: 48.0,
-                    color: Colors.purple[700],
-                  ),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  },
-                ),
-              ),
-              // add top space with empty container
-              Container(
-                height: screenHeight! * 0.1,
-              ),
-            ] +
-            contentView
-                .map(
-                  (e) => Container(
-                    child: ListTile(
-                      title: Text(e.tab.title!),
-                      onTap: () {},
+      child: Container(
+        child: ListView(
+          children: [
+                Align(
+                  alignment: Alignment(0.9, -0.5),
+                  child: IconButton(
+                    hoverColor: Colors.transparent,
+                    icon: Icon(
+                      Icons.close,
+                      size: 48.0,
+                      color: Colors.purple[700],
                     ),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
                   ),
-                )
-                .toList(),
+                ),
+                // add top space with empty container
+                Container(
+                  height: screenHeight! * 0.1,
+                ),
+              ] +
+              contentView
+                  .map(
+                    (e) => Container(
+                      child: ListTile(
+                        title: Text(e.tab.title!),
+                        onTap: () {},
+                      ),
+                    ),
+                  )
+                  .toList(),
+        ),
       ),
     );
   }
