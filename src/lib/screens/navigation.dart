@@ -98,6 +98,7 @@ class _NavigationBarState extends State<NavigationBar>
         children: [
               Align(
                 alignment: Alignment(0.9, -0.5),
+                child: IconButton(),
               ),
               // add top space with empty container
               Container(
