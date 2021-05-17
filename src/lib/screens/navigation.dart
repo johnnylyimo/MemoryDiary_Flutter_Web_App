@@ -7,7 +7,9 @@ class NavigationBar extends StatefulWidget {
 }
 
 class _NavigationBarState extends State<NavigationBar> {
-  List<ContentView> contentView = [];
+  List<ContentView> contentView = [
+    ContentView(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
