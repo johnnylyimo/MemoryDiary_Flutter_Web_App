@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:src/screens/content_view.dart';
+import 'package:src/widgets/widgets.dart';
 
 class NavigationBar extends StatefulWidget {
   @override
