@@ -8,6 +8,10 @@ class NavigationBar extends StatefulWidget {
 class _NavigationBarState extends State<NavigationBar> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: LayoutBuilder(),);
+    return Scaffold(
+      body: LayoutBuilder(
+        builder: (context, constraints) {},
+      ),
+    );
   }
 }
