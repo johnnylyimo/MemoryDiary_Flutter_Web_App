@@ -11,6 +11,7 @@ class _NavigationBarState extends State<NavigationBar>
     with SingleTickerProviderStateMixin {
   TabController? tabController;
 
+  double screenWidth;
   List<ContentView> contentView = [
     ContentView(
       tab: CustomTab(
