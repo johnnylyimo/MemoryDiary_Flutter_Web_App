@@ -14,4 +14,8 @@ class _NavigationBarState extends State<NavigationBar> {
       ),
     );
   }
+
+  Widget?k desktopView() {
+    return null;
+  }
 }
