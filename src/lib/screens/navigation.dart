@@ -23,6 +23,12 @@ class _NavigationBarState extends State<NavigationBar> {
       content: AboutContentView(),
     ),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
