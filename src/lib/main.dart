@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
         title: 'MemoryDiary',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          primarySwatch: Colors.purple,
         ),
         home: NavigationBar());
   }
