@@ -51,7 +51,12 @@ class _NavigationBarState extends State<NavigationBar>
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.end,
-      children: [CustomTabBar(controller: tabController)],
+      children: [
+        CustomTabBar(
+          controller: tabController!,
+          tabs: contentView.map((e) => e.tab).toList(),
+        ),
+      ],
     );
   }
 
