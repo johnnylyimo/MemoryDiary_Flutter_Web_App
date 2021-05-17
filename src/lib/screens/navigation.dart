@@ -13,6 +13,7 @@ class _NavigationBarState extends State<NavigationBar> {
       tab: CustomTab(
         title: 'Home',
       ),
+      content: HomeContentView(),
     ),
   ];
   @override
