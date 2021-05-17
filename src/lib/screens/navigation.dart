@@ -67,8 +67,9 @@ class _NavigationBarState extends State<NavigationBar>
 
   Widget mobileView() {
     return Container(
-      height: screenHeight! * 0.8,
-        child: TabBarView()
-    );
+        height: screenHeight! * 0.8,
+        child: TabBarView(
+          controller: tabController,
+        ));
   }
 }
