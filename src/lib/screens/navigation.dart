@@ -91,7 +91,14 @@ class _NavigationBarState extends State<NavigationBar>
 
   Widget drawer() {
     return Drawer(
-      child: ListView(),
+      child: ListView(
+        children: [
+          // add top space with empty container
+          Container(
+            height: screenHeight! * 0.1,
+          )
+        ],
+      ),
     );
   }
 }
