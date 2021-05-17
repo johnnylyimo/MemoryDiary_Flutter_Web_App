@@ -88,4 +88,8 @@ class _NavigationBarState extends State<NavigationBar>
       ),
     );
   }
+
+  Widget drawer() {
+    return Drawer();
+  }
 }
