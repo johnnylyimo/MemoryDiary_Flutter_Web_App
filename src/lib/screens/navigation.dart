@@ -99,6 +99,7 @@ class _NavigationBarState extends State<NavigationBar>
               Align(
                 alignment: Alignment(0.9, -0.5),
                 child: IconButton(
+                  hoverColor: Colors.transparent,
                   icon: Icon(
                     Icons.close,
                     size: 48.0,
