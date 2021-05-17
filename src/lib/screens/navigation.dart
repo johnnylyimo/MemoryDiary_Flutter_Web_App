@@ -7,8 +7,10 @@ class NavigationBar extends StatefulWidget {
   _NavigationBarState createState() => _NavigationBarState();
 }
 
-class _NavigationBarState extends State<NavigationBar> {
-  TabController tabController;
+class _NavigationBarState extends State<NavigationBar>
+    with SingleTickerProviderStateMixin {
+  TabController? tabController;
+
   List<ContentView> contentView = [
     ContentView(
       tab: CustomTab(
