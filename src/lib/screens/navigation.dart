@@ -76,6 +76,7 @@ class _NavigationBarState extends State<NavigationBar>
       width: screenWidth,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.end,
       ),
     );
   }
