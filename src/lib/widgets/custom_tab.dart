@@ -9,7 +9,9 @@ class CustomTab extends StatelessWidget {
     return Tab(
       child: Text(
         this.title!,
-        style: TextStyle(),
+        style: TextStyle(
+          fontSize: 17.0,
+        ),
       ),
     );
   }
