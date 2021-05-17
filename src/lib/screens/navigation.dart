@@ -101,6 +101,7 @@ class _NavigationBarState extends State<NavigationBar>
                 child: IconButton(
                   icon: Icon(
                     Icons.close,
+                    size: 48.0,
                   ),
                   onPressed: () {
                     Navigator.pop(context);
