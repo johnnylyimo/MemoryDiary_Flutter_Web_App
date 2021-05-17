@@ -74,7 +74,9 @@ class _NavigationBarState extends State<NavigationBar>
   Widget mobileView() {
     return Container(
       width: screenWidth,
-      child: Column(),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+      ),
     );
   }
 }
