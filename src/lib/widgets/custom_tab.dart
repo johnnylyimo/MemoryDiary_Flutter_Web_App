@@ -6,6 +6,6 @@ class CustomTab extends StatelessWidget {
   const CustomTab({@required this.title});
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Tab();
   }
 }
