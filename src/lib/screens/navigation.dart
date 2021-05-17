@@ -54,7 +54,7 @@ class _NavigationBarState extends State<NavigationBar>
   Widget desktopView() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         CustomTabBar(
           controller: tabController!,
