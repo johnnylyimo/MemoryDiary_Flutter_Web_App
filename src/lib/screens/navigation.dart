@@ -11,8 +11,8 @@ class _NavigationBarState extends State<NavigationBar>
     with SingleTickerProviderStateMixin {
   TabController? tabController;
 
-  double screenWidth;
-  double screenHeight;
+  double? screenWidth;
+  double? screenHeight;
   List<ContentView> contentView = [
     ContentView(
       tab: CustomTab(
@@ -36,6 +36,7 @@ class _NavigationBarState extends State<NavigationBar>
 
   @override
   Widget build(BuildContext context) {
+    screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       body: LayoutBuilder(
         builder: (context, constraints) {
