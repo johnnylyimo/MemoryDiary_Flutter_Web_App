@@ -27,6 +27,7 @@ class _NavigationBarState extends State<NavigationBar> {
   @override
   void initState() {
     super.initState();
+    tabController = TabController(length: contentView.length, vsync: this);
   }
 
   @override
