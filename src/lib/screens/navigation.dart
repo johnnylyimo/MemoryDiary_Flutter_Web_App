@@ -10,7 +10,11 @@ class _NavigationBarState extends State<NavigationBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: LayoutBuilder(
-        builder: (context, constraints) {},
+        builder: (context, constraints) {
+          if (constraints.maxWidth > 720) {
+            return desktopView();
+          }
+        },
       ),
     );
   }
