@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.purple,
           primaryColor: Colors.purple,
+          scaffoldBackgroundColor: Colors.purple.shade100,
         ),
         home: NavigationBar());
   }
