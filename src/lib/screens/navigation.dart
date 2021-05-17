@@ -70,6 +70,7 @@ class _NavigationBarState extends State<NavigationBar>
         height: screenHeight! * 0.8,
         child: TabBarView(
           controller: tabController,
+          children: contentView.map((e) => e.content).toList(),
         ));
   }
 }
