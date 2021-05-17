@@ -15,6 +15,7 @@ class _NavigationBarState extends State<NavigationBar> {
       ),
       content: HomeContentView(),
     ),
+    ContentView(),
   ];
   @override
   Widget build(BuildContext context) {
