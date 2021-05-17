@@ -56,6 +56,7 @@ class _NavigationBarState extends State<NavigationBar>
           controller: tabController!,
           tabs: contentView.map((e) => e.tab).toList(),
         ),
+        Container()
       ],
     );
   }
