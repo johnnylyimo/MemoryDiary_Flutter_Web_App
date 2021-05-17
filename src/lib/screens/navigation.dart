@@ -85,7 +85,7 @@ class _NavigationBarState extends State<NavigationBar>
             icon: Icon(Icons.menu_rounded),
             iconSize: screenWidth! * 0.08,
             color: Colors.purple[700],
-            onPressed: () {},
+            onPressed: () => scaffoldKey.currentState!.openEndDrawer(),
           ),
         ],
       ),
