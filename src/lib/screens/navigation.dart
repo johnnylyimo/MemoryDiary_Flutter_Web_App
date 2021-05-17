@@ -103,6 +103,7 @@ class _NavigationBarState extends State<NavigationBar>
                   (e) => Container(
                     child: ListTile(
                       title: Text(e.tab.title!),
+                      onTap: () {},
                     ),
                   ),
                 )
