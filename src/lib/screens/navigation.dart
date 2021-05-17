@@ -13,17 +13,19 @@ class _NavigationBarState extends State<NavigationBar> {
         builder: (context, constraints) {
           if (constraints.maxWidth > 720) {
             return desktopView();
+          } else {
+            return mobileView();
           }
         },
       ),
     );
   }
 
-  Widget? desktopView() {
-    return null;
+  Widget desktopView() {
+    return Container();
   }
 
-  Widget? mobileView() {
-    return null;
+  Widget mobileView() {
+    return Container();
   }
 }
