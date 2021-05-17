@@ -7,7 +7,7 @@ class CustomTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Tab(
-      child: Text(),
+      child: Text(this.title!),
     );
   }
 }
