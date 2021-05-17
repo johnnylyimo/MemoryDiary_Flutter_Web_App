@@ -77,6 +77,7 @@ class _NavigationBarState extends State<NavigationBar>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.end,
+        children: [IconButton()],
       ),
     );
   }
