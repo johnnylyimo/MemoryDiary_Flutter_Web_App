@@ -8,7 +8,11 @@ class NavigationBar extends StatefulWidget {
 
 class _NavigationBarState extends State<NavigationBar> {
   List<ContentView> contentView = [
-    ContentView(),
+    ContentView(
+      tab: CustomTab(
+        title: 'Home',
+      ),
+    ),
   ];
   @override
   Widget build(BuildContext context) {
