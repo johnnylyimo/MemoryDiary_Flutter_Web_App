@@ -9,10 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MemoryDiary',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-    );
+        title: 'MemoryDiary',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: NavigationBar());
   }
 }
