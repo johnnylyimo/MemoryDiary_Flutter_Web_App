@@ -11,6 +11,7 @@ class CustomTab extends StatelessWidget {
         this.title!,
         style: TextStyle(
           color: Colors.purple[700],
+          fontWeight: FontWeight.bold,
           fontSize: 17,
         ),
       ),
