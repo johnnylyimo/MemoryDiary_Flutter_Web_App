@@ -16,10 +16,11 @@ class _NavigationBarState extends State<NavigationBar> {
       content: HomeContentView(),
     ),
     ContentView(
-        tab: CustomTab(
-          title: 'About',
-        ),
-        content: AboutContentView()),
+      tab: CustomTab(
+        title: 'About',
+      ),
+      content: AboutContentView(),
+    ),
   ];
   @override
   Widget build(BuildContext context) {
@@ -37,7 +38,9 @@ class _NavigationBarState extends State<NavigationBar> {
   }
 
   Widget desktopView() {
-    return Container();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+    );
   }
 
   Widget mobileView() {
