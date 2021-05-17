@@ -95,6 +95,7 @@ class _NavigationBarState extends State<NavigationBar>
   Widget drawer() {
     return Drawer(
       child: Container(
+        color: Colors.purple.shade100,
         child: ListView(
           children: [
                 Align(
