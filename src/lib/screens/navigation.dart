@@ -96,10 +96,11 @@ class _NavigationBarState extends State<NavigationBar>
     return Drawer(
       child: ListView(
         children: [
+              Align(),
               // add top space with empty container
               Container(
                 height: screenHeight! * 0.1,
-              )
+              ),
             ] +
             contentView
                 .map(
