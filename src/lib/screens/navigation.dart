@@ -40,6 +40,7 @@ class _NavigationBarState extends State<NavigationBar> {
   Widget desktopView() {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
     );
   }
 
