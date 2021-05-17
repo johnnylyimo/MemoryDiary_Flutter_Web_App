@@ -80,6 +80,7 @@ class _NavigationBarState extends State<NavigationBar>
         children: [
           IconButton(
             icon: Icon(Icons.menu_rounded),
+            iconSize: screenWidth! * 0.08,
           ),
         ],
       ),
