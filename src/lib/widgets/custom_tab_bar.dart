@@ -19,6 +19,7 @@ class CustomTabBar extends StatelessWidget {
       width: screenWidth * tabBarScaling,
       child: TabBar(
         controller: controller,
+        tabs: this.tabs,
       ),
     );
   }
