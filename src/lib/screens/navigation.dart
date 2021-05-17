@@ -40,6 +40,7 @@ class _NavigationBarState extends State<NavigationBar>
     screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       endDrawer: drawer(),
+      key: scaffoldKey,
       body: LayoutBuilder(
         builder: (context, constraints) {
           if (constraints.maxWidth > 720) {
