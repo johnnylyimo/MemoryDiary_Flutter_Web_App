@@ -100,7 +100,9 @@ class _NavigationBarState extends State<NavigationBar>
             ] +
             contentView
                 .map(
-                  (e) => Container(),
+                  (e) => Container(
+                    child: ListTile(),
+                  ),
                 )
                 .toList(),
       ),
