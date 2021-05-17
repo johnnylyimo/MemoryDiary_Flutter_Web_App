@@ -101,7 +101,9 @@ class _NavigationBarState extends State<NavigationBar>
             contentView
                 .map(
                   (e) => Container(
-                    child: ListTile(),
+                    child: ListTile(
+                      title: Text(e.tab.title!),
+                    ),
                   ),
                 )
                 .toList(),
