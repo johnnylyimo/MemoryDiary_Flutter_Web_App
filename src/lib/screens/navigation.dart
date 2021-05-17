@@ -51,6 +51,7 @@ class _NavigationBarState extends State<NavigationBar>
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.end,
+      children: [CustomTabBar()],
     );
   }
 
