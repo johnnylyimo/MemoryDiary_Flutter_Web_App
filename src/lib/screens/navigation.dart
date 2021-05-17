@@ -8,6 +8,7 @@ class NavigationBar extends StatefulWidget {
 }
 
 class _NavigationBarState extends State<NavigationBar> {
+  TabController tabController;
   List<ContentView> contentView = [
     ContentView(
       tab: CustomTab(
