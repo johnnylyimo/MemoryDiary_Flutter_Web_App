@@ -12,6 +12,7 @@ class _NavigationBarState extends State<NavigationBar>
   TabController? tabController;
 
   double screenWidth;
+  double screenHeight;
   List<ContentView> contentView = [
     ContentView(
       tab: CustomTab(
