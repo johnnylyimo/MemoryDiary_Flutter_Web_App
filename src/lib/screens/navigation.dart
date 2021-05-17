@@ -102,6 +102,7 @@ class _NavigationBarState extends State<NavigationBar>
                   icon: Icon(
                     Icons.close,
                     size: 48.0,
+                    color: Colors.purple[700],
                   ),
                   onPressed: () {
                     Navigator.pop(context);
