@@ -40,6 +40,7 @@ class _HomeContentViewState extends State<HomeContentView> {
               text: TextSpan(
                   style: TextStyle(
                 fontSize: 16.0,
+                fontWeight: FontWeight.bold,
               )),
             ),
           ),
