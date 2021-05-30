@@ -54,7 +54,9 @@ class _HomeContentViewState extends State<HomeContentView> {
           SizedBox(
             width: 50.0,
           ),
-          Flexible()
+          Flexible(
+            child: Container(),
+          )
         ],
       ),
     );
