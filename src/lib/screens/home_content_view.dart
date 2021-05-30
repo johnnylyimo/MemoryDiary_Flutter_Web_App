@@ -65,6 +65,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     'Hightlights',
                     style: TextStyle(
                       fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
