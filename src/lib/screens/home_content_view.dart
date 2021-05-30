@@ -7,6 +7,7 @@ class HomeContentView extends StatefulWidget {
 
 class _HomeContentViewState extends State<HomeContentView> {
   double screenWidth;
+  double screenHeight;
   @override
   Widget build(BuildContext context) {
     return Container();
