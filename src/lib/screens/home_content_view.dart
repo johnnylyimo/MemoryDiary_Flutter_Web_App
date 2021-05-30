@@ -25,6 +25,7 @@ class _HomeContentViewState extends State<HomeContentView> {
 
   Widget desktopView() {
     return Container(
+      width: double.infinity,
       child: Row(),
     );
   }
