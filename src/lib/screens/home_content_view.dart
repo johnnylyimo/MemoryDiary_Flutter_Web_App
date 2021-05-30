@@ -35,7 +35,9 @@ class _HomeContentViewState extends State<HomeContentView> {
           Container(
             width: 360.0,
             padding: EdgeInsets.all(5.0),
-            child: RichText(),
+            child: RichText(
+              textAlign: TextAlign.center,
+            ),
           ),
         ],
       ),
