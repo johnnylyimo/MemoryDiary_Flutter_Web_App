@@ -60,6 +60,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               padding: EdgeInsets.all(20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(),
+                ],
               ),
             ),
           )
