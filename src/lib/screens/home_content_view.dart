@@ -28,7 +28,9 @@ class _HomeContentViewState extends State<HomeContentView> {
       width: double.infinity,
       margin: EdgeInsets.only(top: 20.0),
       padding: EdgeInsets.all(20.0),
-      child: Row(),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+      ),
     );
   }
 
