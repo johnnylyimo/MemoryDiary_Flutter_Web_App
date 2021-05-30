@@ -34,6 +34,7 @@ class _HomeContentViewState extends State<HomeContentView> {
         children: [
           Container(
             width: 360.0,
+            padding: EdgeInsets.all(5.0),
           ),
         ],
       ),
