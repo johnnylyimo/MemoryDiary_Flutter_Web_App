@@ -31,6 +31,9 @@ class _HomeContentViewState extends State<HomeContentView> {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(),
+        ],
       ),
     );
   }
