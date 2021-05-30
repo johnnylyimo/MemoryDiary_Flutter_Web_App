@@ -42,7 +42,10 @@ class _HomeContentViewState extends State<HomeContentView> {
                   style: TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.bold,
-                  )),
+                  ),
+                  children: [
+                    TextSpan(),
+                  ]),
             ),
           ),
         ],
