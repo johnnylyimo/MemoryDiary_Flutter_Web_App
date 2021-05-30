@@ -23,5 +23,12 @@ class _HomeContentViewState extends State<HomeContentView> {
     ));
   }
 
-  Widget desktopView() {}
+  Widget desktopView() {
+    return Container();
+  }
+
+
+  Widget mobileView() {
+    return Container();
+  }
 }
