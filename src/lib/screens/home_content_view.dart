@@ -57,6 +57,7 @@ class _HomeContentViewState extends State<HomeContentView> {
           Flexible(
             child: Container(
               width: 700.0,
+              padding: EdgeInsets.all(20.0),
             ),
           )
         ],
