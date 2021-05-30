@@ -30,6 +30,7 @@ class _HomeContentViewState extends State<HomeContentView> {
       padding: EdgeInsets.all(20.0),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
       ),
     );
   }
