@@ -6,8 +6,8 @@ class HomeContentView extends StatefulWidget {
 }
 
 class _HomeContentViewState extends State<HomeContentView> {
-  double screenWidth;
-  double screenHeight;
+  double? screenWidth;
+  double? screenHeight;
   @override
   Widget build(BuildContext context) {
     screenWidth = MediaQuery.of(context).size.width;
@@ -15,7 +15,11 @@ class _HomeContentViewState extends State<HomeContentView> {
     return Scaffold(
       body:LayoutBuilder(
         builder:(context, constraints) {
-
+          if (constraints.maxWidth > 720) {
+            return desktopView();
+          } else {
+            return mobileView();
+          }
         },
       )
     );
