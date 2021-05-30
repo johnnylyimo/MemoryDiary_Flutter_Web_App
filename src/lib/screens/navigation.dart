@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:src/screens/content_view.dart';
+import 'package:src/screens/screens.dart';
 import 'package:src/widgets/widgets.dart';
 
 class NavigationBar extends StatefulWidget {
@@ -18,7 +18,7 @@ class _NavigationBarState extends State<NavigationBar>
       tab: CustomTab(
         title: 'Home',
       ),
-      content: HomeContentView(),
+      content:HomeContentView()
     ),
     ContentView(
       tab: CustomTab(
