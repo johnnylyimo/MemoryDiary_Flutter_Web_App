@@ -13,7 +13,11 @@ class _HomeContentViewState extends State<HomeContentView> {
     screenWidth = MediaQuery.of(context).size.width;
     screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      body:LayoutBuilder()
+      body:LayoutBuilder(
+        builder:(context, constraints) {
+
+        },
+      )
     );
   }
 }
