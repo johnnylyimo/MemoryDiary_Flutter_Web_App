@@ -27,6 +27,7 @@ class _HomeContentViewState extends State<HomeContentView> {
     return Container(
       width: double.infinity,
       margin: EdgeInsets.only(top: 20.0),
+      padding: EdgeInsets.all(20.0),
       child: Row(),
     );
   }
