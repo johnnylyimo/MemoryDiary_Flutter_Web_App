@@ -88,6 +88,7 @@ class _HomeContentViewState extends State<HomeContentView> {
           Container(
             child: RichText(
               textAlign: TextAlign.center,
+              text: TextSpan(),
             ),
           ),
         ],
