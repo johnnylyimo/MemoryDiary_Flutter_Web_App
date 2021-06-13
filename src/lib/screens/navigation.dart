@@ -12,6 +12,7 @@ class _NavigationBarState extends State<NavigationBar>
     with SingleTickerProviderStateMixin {
   TabController? tabController;
   var scaffoldKey = GlobalKey<ScaffoldState>();
+  ItemScrollController? itemScrollController;
   double? screenWidth;
   double? screenHeight;
   List<ContentView> contentView = [
