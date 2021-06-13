@@ -12,15 +12,17 @@ class _HomeContentViewState extends State<HomeContentView> {
   Widget build(BuildContext context) {
     screenWidth = MediaQuery.of(context).size.width;
     screenHeight = MediaQuery.of(context).size.height;
-    return Scaffold(body: LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth > 720) {
-          return desktopView();
-        } else {
-          return mobileView();
-        }
-      },
-    ));
+    return Scaffold(
+      body: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth > 720) {
+            return desktopView();
+          } else {
+            return mobileView();
+          }
+        },
+      ),
+    );
   }
 
   Widget desktopView() {
@@ -79,6 +81,8 @@ class _HomeContentViewState extends State<HomeContentView> {
   }
 
   Widget mobileView() {
-    return Container();
+    return Container(
+      width: double.infinity,
+    );
   }
 }
