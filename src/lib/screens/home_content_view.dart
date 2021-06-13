@@ -105,7 +105,7 @@ class _HomeContentViewState extends State<HomeContentView> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(),
+              Text('Highlights'),
             ],
           )
         ],
