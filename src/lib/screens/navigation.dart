@@ -89,7 +89,9 @@ class _NavigationBarState extends State<NavigationBar>
             color: Colors.purple[700],
             onPressed: () => scaffoldKey.currentState!.openEndDrawer(),
           ),
-          ScrollablePositionedList.builder()
+          Expanded(
+            child: ScrollablePositionedList.builder(),
+          )
         ],
       ),
     );
