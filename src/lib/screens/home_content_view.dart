@@ -83,7 +83,9 @@ class _HomeContentViewState extends State<HomeContentView> {
   Widget mobileView() {
     return Container(
       width: double.infinity,
-      child: Column(),
+      child: Column(
+        children: [Container(),],
+      ),
     );
   }
 }
