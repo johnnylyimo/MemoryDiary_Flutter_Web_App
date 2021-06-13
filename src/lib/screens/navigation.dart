@@ -33,6 +33,7 @@ class _NavigationBarState extends State<NavigationBar>
   void initState() {
     super.initState();
     tabController = TabController(length: contentView.length, vsync: this);
+    itemScrollController = ItemScrollController();
   }
 
   @override
