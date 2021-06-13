@@ -102,7 +102,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               ),
             ),
           ),
-          Column()
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+          )
         ],
       ),
     );
