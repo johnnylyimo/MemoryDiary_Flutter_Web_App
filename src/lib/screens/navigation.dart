@@ -90,7 +90,9 @@ class _NavigationBarState extends State<NavigationBar>
             onPressed: () => scaffoldKey.currentState!.openEndDrawer(),
           ),
           Expanded(
-            child: ScrollablePositionedList.builder(),
+            child: ScrollablePositionedList.builder(
+              itemScrollController: itemScrollController,
+            ),
           )
         ],
       ),
