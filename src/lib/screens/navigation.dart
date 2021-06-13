@@ -91,9 +91,11 @@ class _NavigationBarState extends State<NavigationBar>
           ),
           Expanded(
             child: ScrollablePositionedList.builder(
-              itemScrollController: itemScrollController,
-              itemCount: contentView.length,
-            ),
+                itemScrollController: itemScrollController,
+                itemCount: contentView.length,
+                itemBuilder: (context, index) {
+                  return contentView[index].content;
+                }),
           )
         ],
       ),
