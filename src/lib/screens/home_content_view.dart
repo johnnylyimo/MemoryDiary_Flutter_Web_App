@@ -90,6 +90,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               textAlign: TextAlign.center,
               text: TextSpan(
                 text: 'WORD OF THE DAY\n',
+                style: TextStyle(
+                  fontSize: 16.0,
+                ),
               ),
             ),
           ),
