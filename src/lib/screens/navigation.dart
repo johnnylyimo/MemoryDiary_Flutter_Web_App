@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:src/screens/screens.dart';
 import 'package:src/widgets/widgets.dart';
 
@@ -15,11 +16,10 @@ class _NavigationBarState extends State<NavigationBar>
   double? screenHeight;
   List<ContentView> contentView = [
     ContentView(
-      tab: CustomTab(
-        title: 'Home',
-      ),
-      content:HomeContentView()
-    ),
+        tab: CustomTab(
+          title: 'Home',
+        ),
+        content: HomeContentView()),
     ContentView(
       tab: CustomTab(
         title: 'About',
