@@ -84,7 +84,11 @@ class _HomeContentViewState extends State<HomeContentView> {
     return Container(
       width: double.infinity,
       child: Column(
-        children: [Container(),],
+        children: [
+          Container(
+            child: RichText(),
+          ),
+        ],
       ),
     );
   }
