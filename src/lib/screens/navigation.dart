@@ -138,6 +138,7 @@ class _NavigationBarState extends State<NavigationBar>
                             index: contentView.indexOf(e),
                             duration: Duration(milliseconds: 300),
                           );
+                          Navigator.pop(context);
                         },
                       ),
                     ),
