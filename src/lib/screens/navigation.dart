@@ -91,11 +91,12 @@ class _NavigationBarState extends State<NavigationBar>
           ),
           Expanded(
             child: ScrollablePositionedList.builder(
-                itemScrollController: itemScrollController,
-                itemCount: contentView.length,
-                itemBuilder: (context, index) {
-                  return contentView[index].content;
-                }),
+              itemScrollController: itemScrollController,
+              itemCount: contentView.length,
+              itemBuilder: (context, index) {
+                return contentView[index].content;
+              },
+            ),
           )
         ],
       ),
@@ -132,7 +133,9 @@ class _NavigationBarState extends State<NavigationBar>
                     (e) => Container(
                       child: ListTile(
                         title: Text(e.tab.title!),
-                        onTap: () {},
+                        onTap: () {
+                          itemScrollController.scrollTo();
+                        },
                       ),
                     ),
                   )
