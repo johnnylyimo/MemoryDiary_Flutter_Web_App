@@ -134,7 +134,9 @@ class _NavigationBarState extends State<NavigationBar>
                       child: ListTile(
                         title: Text(e.tab.title!),
                         onTap: () {
-                          itemScrollController.scrollTo();
+                          itemScrollController!.scrollTo(
+                            index: contentView.indexOf(e),
+                          );
                         },
                       ),
                     ),
