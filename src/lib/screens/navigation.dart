@@ -136,6 +136,7 @@ class _NavigationBarState extends State<NavigationBar>
                         onTap: () {
                           itemScrollController!.scrollTo(
                             index: contentView.indexOf(e),
+                            duration: Duration(milliseconds: 300),
                           );
                         },
                       ),
