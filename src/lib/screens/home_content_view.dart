@@ -84,24 +84,26 @@ class _HomeContentViewState extends State<HomeContentView> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            width: screenWidth! * 0.45,
-            color: Colors.purple.shade200,
-            margin: EdgeInsets.symmetric(vertical: 20.0),
-            padding: EdgeInsets.all(20.0),
-            child: RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-                text: 'WORD OF THE DAY\n',
-                style: TextStyle(
-                  fontSize: 16.0,
-                  fontWeight: FontWeight.bold,
-                ),
-                children: [
-                  TextSpan(
-                    text: 'Today will be better than yesterday',
+          Align(
+            child: Container(
+              width: screenWidth! * 0.45,
+              color: Colors.purple.shade200,
+              margin: EdgeInsets.symmetric(vertical: 20.0),
+              padding: EdgeInsets.all(20.0),
+              child: RichText(
+                textAlign: TextAlign.center,
+                text: TextSpan(
+                  text: 'WORD OF THE DAY\n',
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
                   ),
-                ],
+                  children: [
+                    TextSpan(
+                      text: 'Today will be better than yesterday',
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
