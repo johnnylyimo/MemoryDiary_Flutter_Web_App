@@ -82,6 +82,7 @@ class _HomeContentViewState extends State<HomeContentView> {
     return Container(
       width: double.infinity,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             width: screenWidth! * 0.45,
