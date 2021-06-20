@@ -85,6 +85,7 @@ class _HomeContentViewState extends State<HomeContentView> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Align(
+            alignment: Alignment.center,
             child: Container(
               width: screenWidth! * 0.45,
               color: Colors.purple.shade200,
