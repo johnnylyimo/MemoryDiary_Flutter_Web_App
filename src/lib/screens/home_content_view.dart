@@ -85,6 +85,7 @@ class _HomeContentViewState extends State<HomeContentView> {
         children: [
           Container(
             color: Colors.purple.shade200,
+            margin: EdgeInsets.symmetric(vertical: 20.0),
             child: RichText(
               textAlign: TextAlign.center,
               text: TextSpan(
