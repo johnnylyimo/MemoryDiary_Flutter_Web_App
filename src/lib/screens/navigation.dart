@@ -94,6 +94,7 @@ class _NavigationBarState extends State<NavigationBar>
               itemScrollController: itemScrollController,
               itemCount: contentView.length,
               itemBuilder: (context, index) {
+                print('DEBUG: mobile content');
                 return contentView[index].content;
               },
             ),
@@ -103,7 +104,7 @@ class _NavigationBarState extends State<NavigationBar>
     );
   }
 
-  Widget drawer() {
+  Widget drawer(BuildContext context) {
     return Drawer(
       child: Container(
         color: Colors.purple.shade100,
