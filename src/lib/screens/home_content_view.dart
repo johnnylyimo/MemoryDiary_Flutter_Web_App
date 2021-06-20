@@ -84,6 +84,7 @@ class _HomeContentViewState extends State<HomeContentView> {
       child: Column(
         children: [
           Container(
+            width: screenWidth! * 0.45,
             color: Colors.purple.shade200,
             margin: EdgeInsets.symmetric(vertical: 20.0),
             padding: EdgeInsets.all(20.0),
