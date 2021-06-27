@@ -78,6 +78,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                  SizedBox(),
                 ],
               ),
             ),
