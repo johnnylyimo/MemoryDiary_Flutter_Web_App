@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:src/screens/screens.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
