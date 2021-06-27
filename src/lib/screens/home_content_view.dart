@@ -12,6 +12,11 @@ class _HomeContentViewState extends State<HomeContentView> {
   Box? box;
 
   @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     screenWidth = MediaQuery.of(context).size.width;
     screenHeight = MediaQuery.of(context).size.height;
