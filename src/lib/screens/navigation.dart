@@ -94,7 +94,6 @@ class _NavigationBarState extends State<NavigationBar>
               itemScrollController: itemScrollController,
               itemCount: contentView.length,
               itemBuilder: (context, index) {
-                print('DEBUG: mobile content');
                 return contentView[index].content;
               },
             ),
