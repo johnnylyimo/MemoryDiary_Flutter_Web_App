@@ -14,6 +14,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   @override
   void initState() {
     super.initState();
+    box = Hive.box('memoryBox');
   }
 
   @override
