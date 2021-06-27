@@ -3,6 +3,7 @@ import 'package:src/screens/screens.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Hive.openBox('memoryBox');
   runApp(MyApp());
 }
 
