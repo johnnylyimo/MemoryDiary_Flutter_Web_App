@@ -8,6 +8,8 @@ class HomeContentView extends StatefulWidget {
 class _HomeContentViewState extends State<HomeContentView> {
   double? screenWidth;
   double? screenHeight;
+  Box? box;
+
   @override
   Widget build(BuildContext context) {
     screenWidth = MediaQuery.of(context).size.width;
