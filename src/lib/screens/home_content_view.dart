@@ -95,7 +95,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   return Card(
                                     child: ListTile(
                                       leading: Icon(Icons.notes),
-                                      title: Text(),
+                                      title: Text(
+                                        memories.values.elementAt(index),
+                                      ),
                                     ),
                                   );
                                 },
