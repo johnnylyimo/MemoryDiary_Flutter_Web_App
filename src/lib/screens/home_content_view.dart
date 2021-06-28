@@ -85,8 +85,10 @@ class _HomeContentViewState extends State<HomeContentView> {
                   Container(
                     height: MediaQuery.of(context).size.height,
                     child: ValueListenableBuilder(
-                      valueListenable: box!.listenable(),
-                    ),
+                        valueListenable: box!.listenable(),
+                        builder: (context, Box _box, _) {
+                          return Container();
+                        }),
                   )
                 ],
               ),
