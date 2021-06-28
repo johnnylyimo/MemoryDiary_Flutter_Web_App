@@ -91,7 +91,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                             ? ListView.builder(
                                 itemCount: _box.length,
                           itemBuilder: (context, index){
-                                  
+                                  return Card();
                           },
                               )
                             : Text(
