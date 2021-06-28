@@ -94,7 +94,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                           textAlign: TextAlign.left,
                           validator: (String? val) =>
                               val!.isNotEmpty ? null : 'Enter Memory',
-                          decoration: InputDecoration(),
+                          decoration: InputDecoration(
+                            labelText: 'Write new memory here',
+                          ),
                         ),
                       ],
                     ),
