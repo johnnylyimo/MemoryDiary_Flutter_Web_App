@@ -98,6 +98,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                             labelText: 'Write new memory here',
                             prefixIcon: Icon(
                               Icons.notes,
+                              color: Colors.purple,
                             ),
                           ),
                         ),
