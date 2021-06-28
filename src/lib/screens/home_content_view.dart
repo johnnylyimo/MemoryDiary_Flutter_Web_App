@@ -10,6 +10,7 @@ class HomeContentView extends StatefulWidget {
 class _HomeContentViewState extends State<HomeContentView> {
   double? screenWidth;
   double? screenHeight;
+  var memoryController = TextEditingController();
   Box? box;
 
   @override
