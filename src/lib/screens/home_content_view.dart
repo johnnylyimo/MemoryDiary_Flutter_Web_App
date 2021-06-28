@@ -96,6 +96,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                               val!.isNotEmpty ? null : 'Enter Memory',
                           decoration: InputDecoration(
                             labelText: 'Write new memory here',
+                            prefixIcon: Icon(),
                           ),
                         ),
                       ],
