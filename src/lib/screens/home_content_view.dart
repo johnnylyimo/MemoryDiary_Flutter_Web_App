@@ -92,8 +92,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                           maxLines: 5,
                           keyboardType: TextInputType.multiline,
                           textAlign: TextAlign.left,
-                            validator: (String? val) =>
-                            val!.isNotEmpty ? null : 'Enter Memory'
+                          validator: (String? val) =>
+                              val!.isNotEmpty ? null : 'Enter Memory',
+                          decoration: InputDecoration(),
                         ),
                       ],
                     ),
