@@ -90,6 +90,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           autofocus: true,
                           controller: memoryController,
                           maxLines: 5,
+                          keyboardType: TextInputType.multiline,
                         ),
                       ],
                     ),
