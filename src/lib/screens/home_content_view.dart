@@ -93,8 +93,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                 itemBuilder: (context, index) {
                                   return Card(
                                     child: ListTile(
-                                      leading: Icon(Icons.notes),
-                                    ),
+                                        leading: Icon(Icons.notes),
+                                        title: Text()),
                                   );
                                 },
                               )
