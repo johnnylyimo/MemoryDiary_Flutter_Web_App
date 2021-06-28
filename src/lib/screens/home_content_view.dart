@@ -90,6 +90,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         return _box.length != 0
                             ? ListView.builder(
                                 itemCount: _box.length,
+                          itemBuilder: (context, index){
+                                  
+                          },
                               )
                             : Text(
                                 'No Memory\nAdd your memory by click plus button below');
