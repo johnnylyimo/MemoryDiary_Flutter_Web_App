@@ -120,7 +120,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {
                               box!.add(memoryController.text);
-                              ScaffoldMessenger.of(context).showSnackBar();
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(),
+                              );
                             }
                           },
                         ),
