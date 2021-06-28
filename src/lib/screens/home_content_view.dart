@@ -75,7 +75,11 @@ class _HomeContentViewState extends State<HomeContentView> {
                     key: _formKey,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [Text()],
+                      children: [
+                        Text(
+                          'Anytime something positive happens, make a note of it and come back to it later.',
+                        ),
+                      ],
                     ),
                   ),
                 ),
