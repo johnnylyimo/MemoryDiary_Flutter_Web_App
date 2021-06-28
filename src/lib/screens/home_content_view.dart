@@ -135,7 +135,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         SizedBox(
                           height: 20.0,
                         ),
-                        Text()
+                        Text(
+                          'Remember the good times',
+                        )
                       ],
                     ),
                   ),
