@@ -49,21 +49,23 @@ class _HomeContentViewState extends State<HomeContentView> {
             color: Colors.purple.shade200,
             padding: EdgeInsets.all(5.0),
             child: Column(
-              child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                  text: 'WORD OF THE DAY\n',
-                  style: TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  children: [
-                    TextSpan(
-                      text: 'Today will be better than yesterday',
+              children: [
+                RichText(
+                  textAlign: TextAlign.center,
+                  text: TextSpan(
+                    text: 'WORD OF THE DAY\n',
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
-                ),
-              ),
+                    children: [
+                      TextSpan(
+                        text: 'Today will be better than yesterday',
+                      ),
+                    ],
+                  ),
+                )
+              ],
             ),
           ),
           SizedBox(
