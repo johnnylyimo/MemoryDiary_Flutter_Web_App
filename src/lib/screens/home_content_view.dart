@@ -73,7 +73,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                   padding: EdgeInsets.all(20.0),
                   child: Form(
                     key: _formKey,
-                    child: Column(),
+                    child: Column(mainAxisAlignment: MainAxisAlignment.center,),
                   ),
                 ),
               ],
