@@ -82,30 +82,31 @@ class _HomeContentViewState extends State<HomeContentView> {
                   SizedBox(
                     height: 20.0,
                   ),
-                  Container(
-                    height: MediaQuery.of(context).size.height,
-                    child: ValueListenableBuilder(
-                      valueListenable: box!.listenable(),
-                      builder: (context, Box _box, _) {
-                        return _box.length != 0
-                            ? ListView.builder(
-                                itemCount: _box.length,
-                                itemBuilder: (context, index) {
-                                  var memories = _box.toMap();
-                                  return Card(
-                                    child: ListTile(
-                                      leading: Icon(Icons.notes),
-                                      title: Text(
-                                        memories.values.elementAt(index),
-                                        maxLines: 2,
+                  Expanded(
+                    child: Container(
+                      child: ValueListenableBuilder(
+                        valueListenable: box!.listenable(),
+                        builder: (context, Box _box, _) {
+                          return _box.length != 0
+                              ? ListView.builder(
+                                  itemCount: _box.length,
+                                  itemBuilder: (context, index) {
+                                    var memories = _box.toMap();
+                                    return Card(
+                                      child: ListTile(
+                                        leading: Icon(Icons.notes),
+                                        title: Text(
+                                          memories.values.elementAt(index),
+                                          maxLines: 2,
+                                        ),
                                       ),
-                                    ),
-                                  );
-                                },
-                              )
-                            : Text(
-                                'No Memory\nAdd your memory by click plus button below');
-                      },
+                                    );
+                                  },
+                                )
+                              : Text(
+                                  'No Memory\nAdd your memory by click plus button below');
+                        },
+                      ),
                     ),
                   )
                 ],
