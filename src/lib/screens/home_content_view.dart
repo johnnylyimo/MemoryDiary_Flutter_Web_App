@@ -91,10 +91,12 @@ class _HomeContentViewState extends State<HomeContentView> {
                             ? ListView.builder(
                                 itemCount: _box.length,
                                 itemBuilder: (context, index) {
+                                  var memories = _box.toMap();
                                   return Card(
                                     child: ListTile(
-                                        leading: Icon(Icons.notes),
-                                        title: Text()),
+                                      leading: Icon(Icons.notes),
+                                      title: Text(),
+                                    ),
                                   );
                                 },
                               )
