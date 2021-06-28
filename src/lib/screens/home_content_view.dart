@@ -122,7 +122,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                               box!.add(memoryController.text);
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(
-                                  content: Text(),
+                                  content: Text(
+                                    'New memory " ${memoryController.text.substring(0, memoryController.text.length)} " Saved!',
+                                  ),
                                 ),
                               );
                             }
