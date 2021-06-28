@@ -68,7 +68,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                 SizedBox(
                   height: 20.0,
                 ),
-                Container(),
+                Container(
+                  padding: EdgeInsets.all(20.0),
+                ),
               ],
             ),
           ),
