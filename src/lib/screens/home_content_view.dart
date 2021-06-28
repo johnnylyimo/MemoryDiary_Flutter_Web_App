@@ -128,6 +128,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   ),
                                 ),
                               );
+                              memoryController.clear();
                             }
                           },
                         ),
