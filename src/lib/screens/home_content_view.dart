@@ -139,6 +139,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           'Remember the good times',
                           style: TextStyle(
                             fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
                           ),
                         )
                       ],
