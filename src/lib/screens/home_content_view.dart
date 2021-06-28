@@ -78,6 +78,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       children: [
                         Text(
                           'Anytime something positive happens, make a note of it and come back to it later.',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 18.0,
                           ),
