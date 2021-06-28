@@ -70,6 +70,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                 ),
                 Container(
                   padding: EdgeInsets.all(20.0),
+                  child: Form(),
                 ),
               ],
             ),
