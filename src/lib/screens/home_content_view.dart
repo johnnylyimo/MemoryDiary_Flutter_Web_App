@@ -270,7 +270,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                           onPressed: () {
                             box!.delete(memoryKey);
                             Navigator.pop(context);
-                            ScaffoldMessenger.of(context).showSnackBar();
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(),
+                            );
                           },
                         ),
                       ],
