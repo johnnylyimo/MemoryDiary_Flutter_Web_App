@@ -262,6 +262,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       children: [
                         ElevatedButton(
                           child: Text('Delete'),
+                          style: ButtonStyle(),
                         ),
                       ],
                     )
