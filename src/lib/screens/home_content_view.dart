@@ -269,6 +269,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           ),
                           onPressed: () {
                             box!.delete(memoryKey);
+                            Navigator.pop(context);
                           },
                         ),
                       ],
