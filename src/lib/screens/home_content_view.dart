@@ -216,6 +216,8 @@ class _HomeContentViewState extends State<HomeContentView> {
       builder: (context) {
         return Dialog(
           backgroundColor: Colors.purple.shade100,
+          shape: RoundedRectangleBorder(
+          ),
         );
       },
     );
