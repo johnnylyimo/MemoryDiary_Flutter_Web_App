@@ -259,6 +259,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [ElevatedButton()],
                     )
                   ],
                 )),
