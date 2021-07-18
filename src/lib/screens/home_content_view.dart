@@ -285,6 +285,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         ),
                         ElevatedButton(
                           child: Text('Save'),
+                          onPressed: () {
+                            if (_editFormKey.currentState!.validate()) {}
+                          },
                         )
                       ],
                     )
