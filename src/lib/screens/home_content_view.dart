@@ -211,9 +211,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   // Define EditDialog Method
   EditDialog(String memory, int memoryKey) {
     editMemoryController.text = memory;
-    showDialog(
-      context: context,
-    );
+    showDialog(context: context, builder: (context) {});
   }
 
   Widget mobileView() {
