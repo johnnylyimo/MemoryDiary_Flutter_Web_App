@@ -274,6 +274,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                               SnackBar(
                                 content: Text(
                                   'The memory " ${editMemoryController.text.substring(0, editMemoryController.text.length)} " Already been Deleted!',
+                                  textAlign: TextAlign.center,
                                 ),
                               ),
                             );
