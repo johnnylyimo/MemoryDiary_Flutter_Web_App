@@ -188,6 +188,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                                           memories.values.elementAt(index),
                                           maxLines: 2,
                                         ),
+                                        onTap: () {},
                                       ),
                                     );
                                   },
