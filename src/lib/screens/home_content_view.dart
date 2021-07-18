@@ -267,6 +267,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                               Colors.red,
                             ),
                           ),
+                          onPressed: () {
+                            box!.delete(memoryKey);
+                          },
                         ),
                       ],
                     )
