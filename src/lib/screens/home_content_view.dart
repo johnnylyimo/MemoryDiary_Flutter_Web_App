@@ -226,7 +226,9 @@ class _HomeContentViewState extends State<HomeContentView> {
             child: Form(
                 key: _editFormKey,
                 child: Column(
-                  children: [],
+                  children: [
+                    TextFormField(),
+                  ],
                 )),
           ),
         );
