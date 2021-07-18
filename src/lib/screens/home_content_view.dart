@@ -215,12 +215,13 @@ class _HomeContentViewState extends State<HomeContentView> {
       context: context,
       builder: (context) {
         return Dialog(
-          backgroundColor: Colors.purple.shade100,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30),
-          ),
-        child: Container()
-        );
+            backgroundColor: Colors.purple.shade100,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: Container(
+              width: MediaQuery.of(context).size.width * 0.5,
+            ));
       },
     );
   }
