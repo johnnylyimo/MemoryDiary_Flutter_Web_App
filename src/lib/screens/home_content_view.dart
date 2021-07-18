@@ -13,6 +13,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   var memoryController = TextEditingController();
   var editMemoryController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
+  final _editFormKey = GlobalKey<FormState>();
   Box? box;
 
   @override
