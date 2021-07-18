@@ -208,6 +208,9 @@ class _HomeContentViewState extends State<HomeContentView> {
     );
   }
 
+  // Define EditDialog Method
+  EditDialog() {}
+
   Widget mobileView() {
     return Container(
       width: double.infinity,
