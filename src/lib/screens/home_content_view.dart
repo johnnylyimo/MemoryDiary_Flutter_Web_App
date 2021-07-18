@@ -239,6 +239,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                         labelText: 'Edit your memory below',
                         prefixIcon: Icon(
                           Icons.notes,
+                          color: Colors.purple,
                         ),
                       ),
                     ),
