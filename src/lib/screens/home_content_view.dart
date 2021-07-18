@@ -283,7 +283,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         SizedBox(
                           width: 30.0,
                         ),
-                        ElevatedButton()
+                        ElevatedButton(
+                          child: Text('Save'),
+                        )
                       ],
                     )
                   ],
