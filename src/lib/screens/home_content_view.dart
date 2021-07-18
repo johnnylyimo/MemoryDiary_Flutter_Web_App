@@ -245,7 +245,11 @@ class _HomeContentViewState extends State<HomeContentView> {
                           color: Colors.black,
                           fontSize: 24.0,
                         ),
-                        border: OutlineInputBorder(),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10.0),
+                          ),
+                        ),
                       ),
                     ),
                   ],
