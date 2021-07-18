@@ -288,6 +288,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           onPressed: () {
                             if (_editFormKey.currentState!.validate()) {
                               box!.put(memoryKey, editMemoryController.text);
+                              Navigator.pop(context);
                             }
                           },
                         )
