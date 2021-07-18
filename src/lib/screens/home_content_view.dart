@@ -271,7 +271,11 @@ class _HomeContentViewState extends State<HomeContentView> {
                             box!.delete(memoryKey);
                             Navigator.pop(context);
                             ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(),
+                              SnackBar(
+                                content: Text(
+                                  'The memory " ${editMemoryController.text.substring(0, editMemoryController.text.length)} " Already been Deleted!',
+                                ),
+                              ),
                             );
                           },
                         ),
