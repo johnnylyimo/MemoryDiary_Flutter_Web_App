@@ -188,7 +188,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                                           memories.values.elementAt(index),
                                           maxLines: 2,
                                         ),
-                                        onTap: () => showEditDialog(),
+                                        onTap: () => EditDialog(
+                                          memories.values.elementAt(index),
+                                        ),
                                       ),
                                     );
                                   },
