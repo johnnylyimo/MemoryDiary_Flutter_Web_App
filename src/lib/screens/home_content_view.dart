@@ -188,7 +188,10 @@ class _HomeContentViewState extends State<HomeContentView> {
                                           memories.values.elementAt(index),
                                           maxLines: 2,
                                         ),
-                                        trailing: IconButton(icon:Icon(Icons.edit), ,),
+                                        trailing: IconButton(
+                                          icon: Icon(Icons.edit),
+                                          onPressed: () => EditDialog(),
+                                        ),
                                         onTap: () => EditDialog(
                                           memories.values.elementAt(index),
                                           memories.keys.elementAt(index),
