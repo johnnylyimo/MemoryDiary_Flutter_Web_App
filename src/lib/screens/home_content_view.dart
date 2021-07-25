@@ -351,7 +351,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               ),
             ),
           ),
-          SizedBox(),
+          SizedBox(
+            height: 20.0,
+          ),
           Text(
             'Highlights',
             style: TextStyle(
