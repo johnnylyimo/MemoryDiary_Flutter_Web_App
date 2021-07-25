@@ -394,7 +394,9 @@ class _HomeContentViewState extends State<HomeContentView> {
             height: 20.0,
           ),
           Expanded(
-            child: Container(),
+            child: Container(
+              child: ValueListenableBuilder(),
+            ),
           )
         ],
       ),
