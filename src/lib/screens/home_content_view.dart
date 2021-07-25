@@ -323,6 +323,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   Widget mobileView() {
     return Container(
       width: double.infinity,
+      height: screenHeight,
       padding: EdgeInsets.all(20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
