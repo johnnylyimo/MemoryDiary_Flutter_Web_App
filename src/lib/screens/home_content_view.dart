@@ -219,7 +219,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   }
 
   // Define EditDialog Method
-  EditDialog(String memory, int memoryKey) {
+  EditDialog(String memory, int memoryKey, bool isMobile) {
     editMemoryController.text = memory;
     showDialog(
       context: context,
@@ -412,6 +412,10 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   ),
                                   trailing: IconButton(
                                     icon: Icon(Icons.edit),
+                                    onPressed: () => EditDialog(
+                                      memories.values.elementAt(index),
+                                      memories.keys.elementAt(index),
+                                    ),
                                   ),
                                 ),
                               );
