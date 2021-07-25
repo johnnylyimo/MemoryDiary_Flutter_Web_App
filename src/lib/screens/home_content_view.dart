@@ -408,6 +408,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   leading: Icon(Icons.notes),
                                   title: Text(
                                     memories.values.elementAt(index),
+                                    maxLines: 2,
                                   ),
                                 ),
                               );
