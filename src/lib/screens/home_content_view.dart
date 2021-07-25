@@ -376,7 +376,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                     child: Container(
                       width: 48.0,
                       height: 48.0,
-                      decoration: BoxDecoration(),
+                      decoration: BoxDecoration(
+                        color: Colors.purple,
+                      ),
                     ),
                   ),
                 ],
