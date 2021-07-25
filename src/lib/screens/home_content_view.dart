@@ -378,6 +378,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       height: 48.0,
                       decoration: BoxDecoration(
                         color: Colors.purple,
+                        shape: BoxShape.circle,
                       ),
                     ),
                   ),
