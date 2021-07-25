@@ -398,7 +398,8 @@ class _HomeContentViewState extends State<HomeContentView> {
               child: ValueListenableBuilder(
                   valueListenable: box!.listenable(),
                   builder: (context, Box _box, _) {
-                    return Container();
+                    return  _box.length != 0
+                        ? ListView.builder():;
                   }),
             ),
           )
