@@ -367,7 +367,9 @@ class _HomeContentViewState extends State<HomeContentView> {
           ),
           Align(
             alignment: Alignment.topRight,
-            child:GestureDetector(),
+            child:GestureDetector(
+              child: Column(),
+            ),
           )
         ],
       ),
