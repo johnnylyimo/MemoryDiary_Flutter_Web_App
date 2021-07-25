@@ -382,6 +382,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       ),
                       child: Icon(
                         Icons.add,
+                        color: Colors.white,
                       ),
                     ),
                   ),
