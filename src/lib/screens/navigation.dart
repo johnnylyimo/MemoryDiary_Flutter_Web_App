@@ -21,12 +21,12 @@ class _NavigationBarState extends State<NavigationBar>
           title: 'Home',
         ),
         content: HomeContentView()),
-    ContentView(
-      tab: CustomTab(
-        title: 'About',
-      ),
-      content: AboutContentView(),
-    ),
+    // ContentView(
+    //   tab: CustomTab(
+    //     title: 'About',
+    //   ),
+    //   content: AboutContentView(),
+    // ),
   ];
 
   @override
