@@ -401,9 +401,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                     return _box.length != 0
                         ? ListView.builder(
                             itemCount: _box.length,
-                            itemBuilder: (context, index) {
-                              return Card();
-                            },
+    itemBuilder: (context, index) {
+    var memories = _box.toMap();
+    return Card();},
                           )
                         : Text(
                             'No Memory\nAdd your memory by click plus button above');
