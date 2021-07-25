@@ -380,6 +380,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                         color: Colors.purple,
                         shape: BoxShape.circle,
                       ),
+                      child: Icon(),
                     ),
                   ),
                 ],
