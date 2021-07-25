@@ -231,7 +231,9 @@ class _HomeContentViewState extends State<HomeContentView> {
           ),
           child: Container(
             width: MediaQuery.of(context).size.width * 0.5,
-            height: MediaQuery.of(context).size.height * 0.25,
+            height: !isMobile
+                ? MediaQuery.of(context).size.height * 0.25
+                : MediaQuery.of(context).size.height * 0.26,
             padding: EdgeInsets.all(20.0),
             child: Form(
                 key: _editFormKey,
