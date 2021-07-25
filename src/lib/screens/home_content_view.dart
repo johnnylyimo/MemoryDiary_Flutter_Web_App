@@ -191,14 +191,14 @@ class _HomeContentViewState extends State<HomeContentView> {
                                         trailing: IconButton(
                                           icon: Icon(Icons.edit),
                                           onPressed: () => EditDialog(
-                                            memories.values.elementAt(index),
-                                            memories.keys.elementAt(index),
-                                          ),
+                                              memories.values.elementAt(index),
+                                              memories.keys.elementAt(index),
+                                              false),
                                         ),
                                         onTap: () => EditDialog(
-                                          memories.values.elementAt(index),
-                                          memories.keys.elementAt(index),
-                                        ),
+                                            memories.values.elementAt(index),
+                                            memories.keys.elementAt(index),
+                                            false),
                                       ),
                                     );
                                   },
