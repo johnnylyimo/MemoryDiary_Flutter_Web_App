@@ -371,7 +371,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               child: Column(
                 children: [
                   Text('Add New Memory'),
-                  MouseRegion(),
+                  MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                  ),
                 ],
               ),
             ),
