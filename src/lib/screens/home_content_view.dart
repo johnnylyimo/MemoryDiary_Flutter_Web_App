@@ -404,7 +404,9 @@ class _HomeContentViewState extends State<HomeContentView> {
     itemBuilder: (context, index) {
     var memories = _box.toMap();
     return Card(
-      child: ListTile(),
+      child: ListTile(
+        leading: Icon(Icons.notes),
+      ),
     );},
                           )
                         : Text(
