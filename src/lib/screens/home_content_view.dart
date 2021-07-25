@@ -410,7 +410,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                                     memories.values.elementAt(index),
                                     maxLines: 2,
                                   ),
-                                  trailing: IconButton(),
+                                  trailing: IconButton(
+                                    icon: Icon(Icons.edit),
+                                  ),
                                 ),
                               );
                             },
