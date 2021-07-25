@@ -375,6 +375,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       cursor: SystemMouseCursors.click,
                       child: Container(
                         width: 48.0,
+                        height: 48.0,
                       )),
                 ],
               ),
