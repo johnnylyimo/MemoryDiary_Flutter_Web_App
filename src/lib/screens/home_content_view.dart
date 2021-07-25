@@ -396,8 +396,10 @@ class _HomeContentViewState extends State<HomeContentView> {
           Expanded(
             child: Container(
               child: ValueListenableBuilder(
-                valueListenable: box!.listenable(),
-              ),
+                  valueListenable: box!.listenable(),
+                  builder: (context, Box _box, _) {
+                    return Container();
+                  }),
             ),
           )
         ],
