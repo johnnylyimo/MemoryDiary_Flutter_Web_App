@@ -329,7 +329,10 @@ class _HomeContentViewState extends State<HomeContentView> {
     showDialog(
       context: context,
       builder: (context) {
-        return Dialog( backgroundColor: Colors.purple.shade100,);
+        return Dialog(
+          backgroundColor: Colors.purple.shade100,
+          shape: RoundedRectangleBorder(),
+        );
       },
     );
   }
