@@ -378,7 +378,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         box!.add(addNewMemoryController.text);
                         Navigator.pop(context);
                         ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(),
+                          SnackBar(
+                            content: Text(),
+                          ),
                         );
                         addNewMemoryController.clear();
                       }
