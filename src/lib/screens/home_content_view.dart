@@ -355,7 +355,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         Icons.notes,
                         color: Colors.purple,
                       ),
-                      labelStyle: TextStyle(),
+                      labelStyle: TextStyle(
+                        color: Colors.black,
+                      ),
                     ),
                   ),
                 ],
