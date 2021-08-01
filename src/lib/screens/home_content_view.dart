@@ -346,6 +346,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     controller: addNewMemoryController,
                     maxLines: 5,
                     keyboardType: TextInputType.multiline,
+                    textAlign: TextAlign.center,
                   ),
                 ],
               ),
