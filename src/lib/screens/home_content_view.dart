@@ -326,9 +326,7 @@ class _HomeContentViewState extends State<HomeContentView> {
 
   // Add new memory
   addNewMemoryDialog() {
-    showDialog(
-      context:context,
-    );
+    showDialog(context: context, builder: (context) {});
   }
 
   // Mobile screen view
