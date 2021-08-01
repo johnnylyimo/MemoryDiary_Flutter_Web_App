@@ -334,6 +334,7 @@ class _HomeContentViewState extends State<HomeContentView> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(30),
           ),
+          child: Container(),
         );
       },
     );
