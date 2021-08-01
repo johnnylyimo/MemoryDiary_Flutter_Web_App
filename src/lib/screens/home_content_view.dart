@@ -324,6 +324,10 @@ class _HomeContentViewState extends State<HomeContentView> {
     );
   }
 
+  // Add new memory
+  addNewMemoryDialog() {}
+
+  // Mobile screen view
   Widget mobileView() {
     return Container(
       width: double.infinity,
