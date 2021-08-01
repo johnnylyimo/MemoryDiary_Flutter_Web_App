@@ -373,6 +373,11 @@ class _HomeContentViewState extends State<HomeContentView> {
                   ),
                   ElevatedButton(
                     child: Text('Save'),
+                    onPressed: () {
+                      if (_addNewMemoryFormKey.currentState!.validate()) {
+                        box!.add(addNewMemoryController.text);
+                      }
+                    },
                   )
                 ],
               ),
