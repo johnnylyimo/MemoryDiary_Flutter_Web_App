@@ -12,6 +12,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   double? screenHeight;
   var memoryController = TextEditingController();
   var editMemoryController = TextEditingController();
+  var addNewMemoryController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   final _editFormKey = GlobalKey<FormState>();
   Box? box;
