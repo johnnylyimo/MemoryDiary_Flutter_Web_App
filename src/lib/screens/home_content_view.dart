@@ -345,6 +345,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     autofocus: true,
                     controller: addNewMemoryController,
                     maxLines: 5,
+                    keyboardType: TextInputType.multiline,
                   ),
                 ],
               ),
