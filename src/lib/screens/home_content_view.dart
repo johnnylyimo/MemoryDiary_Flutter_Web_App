@@ -339,7 +339,11 @@ class _HomeContentViewState extends State<HomeContentView> {
             height: 220.0,
             child: Form(
               key: _addNewMemoryFormKey,
-              child: Column(),
+              child: Column(
+                children: [
+                  TextFormField(),
+                ],
+              ),
             ),
           ),
         );
