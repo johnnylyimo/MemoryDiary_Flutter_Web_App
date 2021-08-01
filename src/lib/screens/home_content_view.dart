@@ -341,7 +341,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               key: _addNewMemoryFormKey,
               child: Column(
                 children: [
-                  TextFormField(),
+                  TextFormField(
+                    autofocus: true,
+                  ),
                 ],
               ),
             ),
