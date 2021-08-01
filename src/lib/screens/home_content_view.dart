@@ -193,14 +193,14 @@ class _HomeContentViewState extends State<HomeContentView> {
                                         trailing: IconButton(
                                           icon: Icon(Icons.edit),
                                           onPressed: () => EditDialog(
-                                              memories.values.elementAt(index),
-                                              memories.keys.elementAt(index),
-                                              false),
-                                        ),
-                                        onTap: () => EditDialog(
                                             memories.values.elementAt(index),
                                             memories.keys.elementAt(index),
-                                            false),
+                                          ),
+                                        ),
+                                        onTap: () => EditDialog(
+                                          memories.values.elementAt(index),
+                                          memories.keys.elementAt(index),
+                                        ),
                                       ),
                                     );
                                   },
@@ -221,7 +221,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   }
 
   // Define EditDialog Method
-  EditDialog(String memory, int memoryKey, bool isMobile) {
+  EditDialog(String memory, int memoryKey) {
     editMemoryController.text = memory;
     showDialog(
       context: context,
@@ -233,9 +233,7 @@ class _HomeContentViewState extends State<HomeContentView> {
           ),
           child: Container(
             width: MediaQuery.of(context).size.width * 0.5,
-            height: !isMobile
-                ? MediaQuery.of(context).size.height * 0.25
-                : MediaQuery.of(context).size.height * 0.26,
+            height: 220.0,
             padding: EdgeInsets.all(20.0),
             child: Form(
                 key: _editFormKey,
@@ -493,14 +491,14 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   trailing: IconButton(
                                     icon: Icon(Icons.edit),
                                     onPressed: () => EditDialog(
-                                        memories.values.elementAt(index),
-                                        memories.keys.elementAt(index),
-                                        true),
-                                  ),
-                                  onTap: () => EditDialog(
                                       memories.values.elementAt(index),
                                       memories.keys.elementAt(index),
-                                      true),
+                                    ),
+                                  ),
+                                  onTap: () => EditDialog(
+                                    memories.values.elementAt(index),
+                                    memories.keys.elementAt(index),
+                                  ),
                                 ),
                               );
                             },
