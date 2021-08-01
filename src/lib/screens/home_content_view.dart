@@ -412,8 +412,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                         color: Colors.purple,
                         shape: BoxShape.circle,
                       ),
-                      child: Icon(
-                        Icons.add,
+                      child: IconButton(
+                        icon: Icon(Icons.add),
                         color: Colors.white,
                       ),
                     ),
