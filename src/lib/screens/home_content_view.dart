@@ -368,7 +368,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                       ),
                     ),
                   ),
-                  SizedBox(),
+                  SizedBox(
+                    height: 20.0,
+                  ),
                 ],
               ),
             ),
