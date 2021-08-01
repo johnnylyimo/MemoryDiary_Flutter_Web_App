@@ -357,6 +357,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       ),
                       labelStyle: TextStyle(
                         color: Colors.black,
+                        fontSize: 24.0,
                       ),
                     ),
                   ),
