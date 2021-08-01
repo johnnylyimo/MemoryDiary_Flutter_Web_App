@@ -325,7 +325,9 @@ class _HomeContentViewState extends State<HomeContentView> {
   }
 
   // Add new memory
-  addNewMemoryDialog() {}
+  addNewMemoryDialog() {
+    showDialog();
+  }
 
   // Mobile screen view
   Widget mobileView() {
