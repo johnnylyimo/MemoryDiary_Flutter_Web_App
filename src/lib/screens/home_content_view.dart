@@ -360,7 +360,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         fontSize: 24.0,
                       ),
                       border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10.0),
+                        ),
                         borderSide: BorderSide(color: Colors.purple),
                       ),
                     ),
