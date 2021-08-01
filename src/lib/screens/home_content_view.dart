@@ -344,6 +344,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                   TextFormField(
                     autofocus: true,
                     controller: addNewMemoryController,
+                    maxLines: 5,
                   ),
                 ],
               ),
