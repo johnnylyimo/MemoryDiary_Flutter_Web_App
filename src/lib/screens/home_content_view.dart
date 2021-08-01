@@ -359,7 +359,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         color: Colors.black,
                         fontSize: 24.0,
                       ),
-                      border: OutlineInputBorder(),
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.purple),
+                      ),
                     ),
                   ),
                 ],
