@@ -381,6 +381,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           SnackBar(
                             content: Text(
                               'New memory " ${addNewMemoryController.text.substring(0, addNewMemoryController.text.length)} " Saved!',
+                              textAlign: TextAlign.center,
                             ),
                           ),
                         );
