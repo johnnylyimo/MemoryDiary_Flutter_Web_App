@@ -415,6 +415,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       child: IconButton(
                         icon: Icon(Icons.add),
                         color: Colors.white,
+                        onPressed: () => addNewMemoryDialog(),
                       ),
                     ),
                   ),
