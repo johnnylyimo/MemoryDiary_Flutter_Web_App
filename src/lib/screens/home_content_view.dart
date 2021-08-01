@@ -353,6 +353,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       labelText: 'Add your memory below',
                       prefixIcon: Icon(
                         Icons.notes,
+                        color: Colors.purple,
                       ),
                     ),
                   ),
