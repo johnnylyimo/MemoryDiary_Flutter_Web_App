@@ -337,7 +337,7 @@ class _HomeContentViewState extends State<HomeContentView> {
           child: Container(
             width: MediaQuery.of(context).size.width * 0.7,
             height: 220.0,
-            child: Form(),
+            child: Form(key: _addNewMemoryFormKey,),
           ),
         );
       },
