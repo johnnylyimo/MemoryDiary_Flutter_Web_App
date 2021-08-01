@@ -377,7 +377,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                       if (_addNewMemoryFormKey.currentState!.validate()) {
                         box!.add(addNewMemoryController.text);
                         Navigator.pop(context);
-                        ScaffoldMessenger.of(context).showSnackBar();
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(),
+                        );
                         addNewMemoryController.clear();
                       }
                     },
