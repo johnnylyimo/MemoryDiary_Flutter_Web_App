@@ -274,6 +274,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                     TextButton(
                       child: Text(
                         'Github',
+                        style: TextStyle(
+                          letterSpacing: 0.5,
+                        ),
                       ),
                       onPressed: () {},
                     ),
