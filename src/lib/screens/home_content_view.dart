@@ -313,7 +313,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               Flexible(
                 child: Column(
                   children: [
-                    Text(),
+                    Text(
+                      'Visit',
+                    ),
                   ],
                 ),
               )
