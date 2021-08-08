@@ -261,6 +261,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                   children: [
                     Text(
                       'Follow Me',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
                     )
                   ],
                 ),
