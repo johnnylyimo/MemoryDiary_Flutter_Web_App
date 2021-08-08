@@ -39,6 +39,185 @@ class _HomeContentViewState extends State<HomeContentView> {
     );
   }
 
+  // Define EditDialog Method
+  EditDialog(String memory, int memoryKey) {
+    editMemoryController.text = memory;
+    showDialog(
+      context: context,
+      builder: (context) {
+        return Dialog(
+          backgroundColor: Colors.purple.shade100,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.5,
+            height: 220.0,
+            padding: EdgeInsets.all(20.0),
+            child: Form(
+                key: _editFormKey,
+                child: Column(
+                  children: [
+                    TextFormField(
+                      autofocus: true,
+                      controller: editMemoryController,
+                      maxLines: 5,
+                      keyboardType: TextInputType.multiline,
+                      textAlign: TextAlign.center,
+                      validator: (String? val) =>
+                          val!.isNotEmpty ? null : 'Enter Memory',
+                      decoration: InputDecoration(
+                        labelText: 'Edit your memory below',
+                        prefixIcon: Icon(
+                          Icons.notes,
+                          color: Colors.purple,
+                        ),
+                        labelStyle: TextStyle(
+                          color: Colors.black,
+                          fontSize: 24.0,
+                        ),
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10.0),
+                          ),
+                          borderSide: BorderSide(color: Colors.purple),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        ElevatedButton(
+                          child: Text('Delete'),
+                          style: ButtonStyle(
+                            backgroundColor: MaterialStateProperty.all<Color>(
+                              Colors.red,
+                            ),
+                          ),
+                          onPressed: () {
+                            box!.delete(memoryKey);
+                            Navigator.pop(context);
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  'The memory " ${editMemoryController.text.substring(0, editMemoryController.text.length)} " Already been Deleted!',
+                                  textAlign: TextAlign.center,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                        SizedBox(
+                          width: 30.0,
+                        ),
+                        ElevatedButton(
+                          child: Text('Save'),
+                          onPressed: () {
+                            if (_editFormKey.currentState!.validate()) {
+                              box!.put(memoryKey, editMemoryController.text);
+                              Navigator.pop(context);
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(
+                                  content: Text(
+                                    'The memory " ${editMemoryController.text.substring(0, editMemoryController.text.length)} " Edited Successfully!',
+                                    textAlign: TextAlign.center,
+                                  ),
+                                ),
+                              );
+                            }
+                          },
+                        )
+                      ],
+                    )
+                  ],
+                )),
+          ),
+        );
+      },
+    );
+  }
+
+  // Add new memory
+  addNewMemoryDialog() {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return Dialog(
+          backgroundColor: Colors.purple.shade100,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          child: Container(
+            width: MediaQuery.of(context).size.width * 0.7,
+            height: 220.0,
+            padding: EdgeInsets.all(20.0),
+            child: Form(
+              key: _addNewMemoryFormKey,
+              child: Column(
+                children: [
+                  TextFormField(
+                    autofocus: true,
+                    controller: addNewMemoryController,
+                    maxLines: 5,
+                    keyboardType: TextInputType.multiline,
+                    textAlign: TextAlign.center,
+                    validator: (String? val) =>
+                        val!.isNotEmpty ? null : 'Enter Memory',
+                    decoration: InputDecoration(
+                      labelText: 'Add your memory below',
+                      prefixIcon: Icon(
+                        Icons.notes,
+                        color: Colors.purple,
+                      ),
+                      labelStyle: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24.0,
+                      ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(10.0),
+                        ),
+                        borderSide: BorderSide(color: Colors.purple),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20.0,
+                  ),
+                  ElevatedButton(
+                    child: Text('Save'),
+                    onPressed: () {
+                      if (_addNewMemoryFormKey.currentState!.validate()) {
+                        box!.add(addNewMemoryController.text);
+                        Navigator.pop(context);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              'New memory " ${addNewMemoryController.text.substring(0, addNewMemoryController.text.length)} " Saved!',
+                              textAlign: TextAlign.center,
+                            ),
+                          ),
+                        );
+                        addNewMemoryController.clear();
+                      }
+                    },
+                  )
+                ],
+              ),
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  // Footer widget
+  Widget footer() {}
+
   Widget desktopView() {
     return Container(
       width: double.infinity,
@@ -217,182 +396,6 @@ class _HomeContentViewState extends State<HomeContentView> {
           )
         ],
       ),
-    );
-  }
-
-  // Define EditDialog Method
-  EditDialog(String memory, int memoryKey) {
-    editMemoryController.text = memory;
-    showDialog(
-      context: context,
-      builder: (context) {
-        return Dialog(
-          backgroundColor: Colors.purple.shade100,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30),
-          ),
-          child: Container(
-            width: MediaQuery.of(context).size.width * 0.5,
-            height: 220.0,
-            padding: EdgeInsets.all(20.0),
-            child: Form(
-                key: _editFormKey,
-                child: Column(
-                  children: [
-                    TextFormField(
-                      autofocus: true,
-                      controller: editMemoryController,
-                      maxLines: 5,
-                      keyboardType: TextInputType.multiline,
-                      textAlign: TextAlign.center,
-                      validator: (String? val) =>
-                          val!.isNotEmpty ? null : 'Enter Memory',
-                      decoration: InputDecoration(
-                        labelText: 'Edit your memory below',
-                        prefixIcon: Icon(
-                          Icons.notes,
-                          color: Colors.purple,
-                        ),
-                        labelStyle: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24.0,
-                        ),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10.0),
-                          ),
-                          borderSide: BorderSide(color: Colors.purple),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                          child: Text('Delete'),
-                          style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all<Color>(
-                              Colors.red,
-                            ),
-                          ),
-                          onPressed: () {
-                            box!.delete(memoryKey);
-                            Navigator.pop(context);
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              SnackBar(
-                                content: Text(
-                                  'The memory " ${editMemoryController.text.substring(0, editMemoryController.text.length)} " Already been Deleted!',
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            );
-                          },
-                        ),
-                        SizedBox(
-                          width: 30.0,
-                        ),
-                        ElevatedButton(
-                          child: Text('Save'),
-                          onPressed: () {
-                            if (_editFormKey.currentState!.validate()) {
-                              box!.put(memoryKey, editMemoryController.text);
-                              Navigator.pop(context);
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  content: Text(
-                                    'The memory " ${editMemoryController.text.substring(0, editMemoryController.text.length)} " Edited Successfully!',
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              );
-                            }
-                          },
-                        )
-                      ],
-                    )
-                  ],
-                )),
-          ),
-        );
-      },
-    );
-  }
-
-  // Add new memory
-  addNewMemoryDialog() {
-    showDialog(
-      context: context,
-      builder: (context) {
-        return Dialog(
-          backgroundColor: Colors.purple.shade100,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30),
-          ),
-          child: Container(
-            width: MediaQuery.of(context).size.width * 0.7,
-            height: 220.0,
-            padding: EdgeInsets.all(20.0),
-            child: Form(
-              key: _addNewMemoryFormKey,
-              child: Column(
-                children: [
-                  TextFormField(
-                    autofocus: true,
-                    controller: addNewMemoryController,
-                    maxLines: 5,
-                    keyboardType: TextInputType.multiline,
-                    textAlign: TextAlign.center,
-                    validator: (String? val) =>
-                        val!.isNotEmpty ? null : 'Enter Memory',
-                    decoration: InputDecoration(
-                      labelText: 'Add your memory below',
-                      prefixIcon: Icon(
-                        Icons.notes,
-                        color: Colors.purple,
-                      ),
-                      labelStyle: TextStyle(
-                        color: Colors.black,
-                        fontSize: 24.0,
-                      ),
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(10.0),
-                        ),
-                        borderSide: BorderSide(color: Colors.purple),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 20.0,
-                  ),
-                  ElevatedButton(
-                    child: Text('Save'),
-                    onPressed: () {
-                      if (_addNewMemoryFormKey.currentState!.validate()) {
-                        box!.add(addNewMemoryController.text);
-                        Navigator.pop(context);
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              'New memory " ${addNewMemoryController.text.substring(0, addNewMemoryController.text.length)} " Saved!',
-                              textAlign: TextAlign.center,
-                            ),
-                          ),
-                        );
-                        addNewMemoryController.clear();
-                      }
-                    },
-                  )
-                ],
-              ),
-            ),
-          ),
-        );
-      },
     );
   }
 
