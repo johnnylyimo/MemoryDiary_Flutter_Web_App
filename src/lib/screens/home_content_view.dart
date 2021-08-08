@@ -258,7 +258,11 @@ class _HomeContentViewState extends State<HomeContentView> {
               ),
               Flexible(
                 child: Column(
-                  children: [Text()],
+                  children: [
+                    Text(
+                      'Follow Me',
+                    )
+                  ],
                 ),
               )
             ],
