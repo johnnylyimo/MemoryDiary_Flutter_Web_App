@@ -300,6 +300,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                         'LinkedIn',
                         style: TextStyle(
                           color: Colors.blue,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       onPressed: () {},
