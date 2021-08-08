@@ -234,6 +234,7 @@ class _HomeContentViewState extends State<HomeContentView> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
+              Column(children: [],)
               Image(
                 image: AssetImage('images/logo.PNG'),
               ),
