@@ -240,7 +240,9 @@ class _HomeContentViewState extends State<HomeContentView> {
               SizedBox(
                 height: 10.0,
               ),
-              Text()
+              Text(
+                "MolysTechie is tech startup, specialized on developing Mobile Apps, Web App and Wep APIs. It's senior Developer is John L. Lyimo, the guy who developed this Website that is powered by Flutter and hosted on GitHub pages.",
+              )
             ],
           ),
         ],
