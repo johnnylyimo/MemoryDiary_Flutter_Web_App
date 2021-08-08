@@ -315,6 +315,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                   children: [
                     Text(
                       'Visit',
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
                     ),
                   ],
                 ),
