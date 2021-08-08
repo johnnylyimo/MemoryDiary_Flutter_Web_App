@@ -311,7 +311,11 @@ class _HomeContentViewState extends State<HomeContentView> {
                 ),
               ),
               Flexible(
-                child: Column(children: []),
+                child: Column(
+                  children: [
+                    Text(),
+                  ],
+                ),
               )
             ],
           ),
