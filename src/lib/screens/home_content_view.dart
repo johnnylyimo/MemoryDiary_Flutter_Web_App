@@ -219,6 +219,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   Widget footer() {
     return Container(
       height: 300.0,
+      width: double.infinity,
     );
   }
 
