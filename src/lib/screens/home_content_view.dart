@@ -301,6 +301,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                         style: TextStyle(
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
+                          fontSize: 14.0,
                         ),
                       ),
                       onPressed: () {},
