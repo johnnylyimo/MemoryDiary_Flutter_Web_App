@@ -317,6 +317,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       'Visit',
                       style: TextStyle(
                         color: Colors.black,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
                   ],
