@@ -232,6 +232,7 @@ class _HomeContentViewState extends State<HomeContentView> {
         children: [
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [],
           ),
         ],
