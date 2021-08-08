@@ -309,7 +309,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                     ),
                   ],
                 ),
-              )
+              ),
+              Flexible()
             ],
           ),
         ],
