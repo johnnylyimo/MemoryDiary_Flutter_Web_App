@@ -318,6 +318,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       style: TextStyle(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
                       ),
                     ),
                   ],
