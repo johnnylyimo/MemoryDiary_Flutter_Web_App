@@ -275,6 +275,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       child: Text(
                         'Github',
                         style: TextStyle(
+                          color: Colors.blue,
                           fontWeight: FontWeight.bold,
                           fontSize: 14.0,
                           letterSpacing: 0.5,
