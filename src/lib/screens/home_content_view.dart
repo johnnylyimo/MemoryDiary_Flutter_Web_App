@@ -217,7 +217,9 @@ class _HomeContentViewState extends State<HomeContentView> {
 
   // Footer widget
   Widget footer() {
-    return Container();
+    return Container(
+      height: 300.0,
+    );
   }
 
   Widget desktopView() {
