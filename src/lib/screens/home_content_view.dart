@@ -216,7 +216,9 @@ class _HomeContentViewState extends State<HomeContentView> {
   }
 
   // Footer widget
-  Widget footer() {}
+  Widget footer() {
+    return Container();
+  }
 
   Widget desktopView() {
     return Container(
