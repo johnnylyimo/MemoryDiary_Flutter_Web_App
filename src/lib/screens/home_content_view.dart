@@ -220,6 +220,7 @@ class _HomeContentViewState extends State<HomeContentView> {
     return Container(
       height: 300.0,
       width: double.infinity,
+      margin: EdgeInsets.only(top: 10.0),
     );
   }
 
