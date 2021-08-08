@@ -532,7 +532,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                             'No Memory\nAdd your memory by click plus button above');
                   }),
             ),
-          )
+          ),
+          footer()
         ],
       ),
     );
