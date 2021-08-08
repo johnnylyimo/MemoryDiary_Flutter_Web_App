@@ -229,7 +229,12 @@ class _HomeContentViewState extends State<HomeContentView> {
         color: Colors.purple.withOpacity(0.13),
       ),
       child: Column(
-        children: [Row()],
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [],
+          ),
+        ],
       ),
     );
   }
