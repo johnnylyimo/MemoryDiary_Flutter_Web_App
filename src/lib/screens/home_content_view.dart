@@ -228,7 +228,9 @@ class _HomeContentViewState extends State<HomeContentView> {
       decoration: BoxDecoration(
         color: Colors.purple.withOpacity(0.13),
       ),
-      child: Column(),
+      child: Column(
+        children: [Row()],
+      ),
     );
   }
 
