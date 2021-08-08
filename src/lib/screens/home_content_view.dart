@@ -225,7 +225,9 @@ class _HomeContentViewState extends State<HomeContentView> {
         horizontal: 10.0,
         vertical: 10.0,
       ),
-      decoration: BoxDecoration(),
+      decoration: BoxDecoration(
+        color: Colors.purple.withOpacity(0.13),
+      ),
     );
   }
 
