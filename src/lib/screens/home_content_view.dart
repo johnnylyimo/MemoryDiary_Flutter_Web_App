@@ -288,6 +288,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                         'Twitter',
                         style: TextStyle(
                           color: Colors.blue,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       onPressed: () {},
