@@ -221,6 +221,10 @@ class _HomeContentViewState extends State<HomeContentView> {
       height: 300.0,
       width: double.infinity,
       margin: EdgeInsets.only(top: 10.0),
+      padding: EdgeInsets.symmetric(
+        horizontal: 10.0,
+        vertical: 10.0,
+      ),
     );
   }
 
