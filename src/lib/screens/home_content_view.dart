@@ -326,9 +326,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       height: 10.0,
                     ),
                     Row(
-                      children: [
-                        Icon(Icons.place),
-                      ],
+                      children: [Icon(Icons.place), Text()],
                     )
                   ],
                 ),
