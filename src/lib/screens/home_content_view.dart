@@ -241,6 +241,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     Image(
                       image: AssetImage('images/logo.PNG'),
                       width: 160.0,
+                      height: 114.0,
                     ),
                     SizedBox(
                       height: 10.0,
