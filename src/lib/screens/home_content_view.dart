@@ -312,7 +312,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                           letterSpacing: 0.5,
                         ),
                       ),
-                      onPressed: () => _launchURL(),
+                      onPressed: () =>
+                          _launchURL('https://www.linkedin.com/in/johnnylyimo'),
                     ),
                   ],
                 ),
