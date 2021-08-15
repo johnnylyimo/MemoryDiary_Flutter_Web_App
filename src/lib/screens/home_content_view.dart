@@ -422,7 +422,7 @@ class _HomeContentViewState extends State<HomeContentView> {
     );
   }
 
-  void _launchURL() async {}
+  void _launchURL(String url) async {}
 
   Widget desktopView() {
     return Container(
