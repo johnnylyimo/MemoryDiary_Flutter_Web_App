@@ -245,7 +245,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       height: 10.0,
                     ),
                     Text(
-                      "MolysTechie is tech startup, specialized on developing Mobile Apps, Web App and Wep APIs. It's senior Developer is John L. Lyimo, the guy who developed this Website that is powered by Flutter and hosted on GitHub pages.",
+                      "MolysTechie is tech startup, specialized on developing Mobile Apps, Web Apps and Wep APIs. It's senior Developer is John L. Lyimo, the guy who developed this Website that is powered by Flutter and hosted on GitHub pages.",
                       textAlign: TextAlign.center,
                       maxLines: 8,
                       overflow: TextOverflow.ellipsis,
@@ -374,8 +374,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                       height: 10.0,
                     ),
                     Row(
+                      Icon(),
                       children: [
-                        Text('Email: molystechie@gmail.com'),
+                        Text(' molystechie@gmail.com'),
                       ],
                     ),
                   ],
