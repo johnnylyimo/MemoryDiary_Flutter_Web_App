@@ -423,7 +423,8 @@ class _HomeContentViewState extends State<HomeContentView> {
     );
   }
 
-  void _launchURL(String url) async => await canLaunch(url)? await launch(url)
+  void _launchURL(String url) async =>
+      await canLaunch(url) ? await launch(url) : throw 'Could not launch $url';
 
   Widget desktopView() {
     return Container(
