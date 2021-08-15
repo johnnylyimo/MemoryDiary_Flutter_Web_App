@@ -359,7 +359,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     SizedBox(
                       height: 10.0,
                     ),
-                    Text(),
+                    Text('Phone: 0763 291029'),
                   ],
                 ),
               ),
