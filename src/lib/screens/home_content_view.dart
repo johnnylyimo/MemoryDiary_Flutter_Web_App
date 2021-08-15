@@ -382,11 +382,16 @@ class _HomeContentViewState extends State<HomeContentView> {
               ),
               children: [
                 TextSpan(
-                    text: '2021 ',
-                    style: TextStyle(
-                      fontSize: 20.0,
+                  text: '2021 ',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
+                  children: [
+                    TextSpan(
+                      text: 'MolysTechie. All Rights Reserved.',
                     ),
-                    children: [TextSpan()]),
+                  ],
+                ),
               ],
             ),
           ),
