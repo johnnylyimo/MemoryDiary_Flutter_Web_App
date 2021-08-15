@@ -373,6 +373,7 @@ class _HomeContentViewState extends State<HomeContentView> {
           Divider(
             color: Colors.purple,
           ),
+          RichText()
         ],
       ),
     );
