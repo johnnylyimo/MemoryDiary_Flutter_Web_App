@@ -375,12 +375,12 @@ class _HomeContentViewState extends State<HomeContentView> {
           ),
           RichText(
             text: TextSpan(
-              text: '©',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 24.0,
-              ),
-            ),
+                text: '©',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 24.0,
+                ),
+                children: [TextSpan()]),
           ),
         ],
       ),
