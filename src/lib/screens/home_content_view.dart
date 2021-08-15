@@ -374,8 +374,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                       height: 10.0,
                     ),
                     Row(
-                      Icon(),
                       children: [
+                        Icon(Icons.email),
                         Text(' molystechie@gmail.com'),
                       ],
                     ),
