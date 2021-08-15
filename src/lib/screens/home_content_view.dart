@@ -344,18 +344,20 @@ class _HomeContentViewState extends State<HomeContentView> {
               SizedBox(
                 width: 10.0,
               ),
-              Column(
-                children: [
-                  Text(
-                    'Contact Me',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14.0,
-                      letterSpacing: 0.5,
+              Flexible(
+                child: Column(
+                  children: [
+                    Text(
+                      'Contact Me',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
+                        letterSpacing: 0.5,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
