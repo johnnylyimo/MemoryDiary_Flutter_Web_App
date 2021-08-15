@@ -328,11 +328,13 @@ class _HomeContentViewState extends State<HomeContentView> {
                     Row(
                       children: [
                         Icon(Icons.place),
-                        Text(
-                          'Buni at Costech Building, Sayansi,Dar es Salaam.',
-                          textAlign: TextAlign.center,
-                          maxLines: 5,
-                          overflow: TextOverflow.ellipsis,
+                        Flexible(
+                          child: Text(
+                            'Buni at Costech Building, Sayansi,Dar es Salaam.',
+                            textAlign: TextAlign.center,
+                            maxLines: 5,
+                            overflow: TextOverflow.ellipsis,
+                          ),
                         )
                       ],
                     )
