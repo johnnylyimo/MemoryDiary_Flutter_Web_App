@@ -373,7 +373,11 @@ class _HomeContentViewState extends State<HomeContentView> {
                     SizedBox(
                       height: 10.0,
                     ),
-                    Text('Email: molystechie@gmail.com'),
+                    Row(
+                      children: [
+                        Text('Email: molystechie@gmail.com'),
+                      ],
+                    ),
                   ],
                 ),
               ),
