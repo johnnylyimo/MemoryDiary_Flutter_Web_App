@@ -218,7 +218,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   // Footer widget
   Widget footer() {
     return Container(
-      height: 340.0,
+      height: 350.0,
       width: double.infinity,
       margin: EdgeInsets.only(top: 10.0),
       padding: EdgeInsets.symmetric(
@@ -240,6 +240,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                   children: [
                     Image(
                       image: AssetImage('images/logo.PNG'),
+                      width: 160.0,
                     ),
                     SizedBox(
                       height: 10.0,
@@ -247,7 +248,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     Text(
                       "MolysTechie is tech startup, specialized on developing Mobile Apps, Web Apps and Wep APIs. It's senior Developer is John L. Lyimo, the guy who developed this Website that is powered by Flutter and hosted on GitHub pages.",
                       textAlign: TextAlign.center,
-                      maxLines: 8,
+                      maxLines: 10,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ],
