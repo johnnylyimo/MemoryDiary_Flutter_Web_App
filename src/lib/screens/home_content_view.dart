@@ -350,6 +350,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     'Contact Me',
                     style: TextStyle(
                       color: Colors.black,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
