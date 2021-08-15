@@ -365,7 +365,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         Icon(
                           Icons.local_phone,
                         ),
-                        Text(' 0763 291029'),
+                        Flexible(
+                          child: Text(' 0763 291029'),
+                        ),
                       ],
                     ),
                     SizedBox(
