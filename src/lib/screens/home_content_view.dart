@@ -332,6 +332,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           'Buni at Costech Building, Sayansi,Dar es Salaam.',
                           textAlign: TextAlign.center,
                           maxLines: 5,
+                          overflow: TextOverflow.ellipsis,
                         )
                       ],
                     )
