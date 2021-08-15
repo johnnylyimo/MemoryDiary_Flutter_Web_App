@@ -422,6 +422,8 @@ class _HomeContentViewState extends State<HomeContentView> {
     );
   }
 
+  void _launchURL() async {}
+
   Widget desktopView() {
     return Container(
       width: double.infinity,
