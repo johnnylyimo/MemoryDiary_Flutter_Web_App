@@ -218,7 +218,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   // Footer widget
   Widget footer() {
     return Container(
-      height: 300.0,
+      height: 340.0,
       width: double.infinity,
       margin: EdgeInsets.only(top: 10.0),
       padding: EdgeInsets.symmetric(
