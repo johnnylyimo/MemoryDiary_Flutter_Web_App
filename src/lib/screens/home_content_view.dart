@@ -376,7 +376,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                     Row(
                       children: [
                         Icon(Icons.email),
-                        Text(' molystechie@gmail.com'),
+                        Flexible(
+                          child: Text(' molystechie@gmail.com'),
+                        ),
                       ],
                     ),
                   ],
