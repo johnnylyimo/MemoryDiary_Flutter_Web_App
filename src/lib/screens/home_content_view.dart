@@ -330,6 +330,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                         Icon(Icons.place),
                         Text(
                           'Buni at Costech Building, Sayansi,Dar es Salaam.',
+                          textAlign: TextAlign.center,
                         )
                       ],
                     )
