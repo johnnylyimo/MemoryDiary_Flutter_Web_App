@@ -380,7 +380,11 @@ class _HomeContentViewState extends State<HomeContentView> {
                   color: Colors.black,
                   fontSize: 24.0,
                 ),
-                children: [TextSpan()]),
+                children: [
+                  TextSpan(
+                    text: '2021 ',
+                  ),
+                ]),
           ),
         ],
       ),
