@@ -345,7 +345,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                 width: 10.0,
               ),
               Column(
-                children: [Text()],
+                children: [Text('Contact Me'),],
               )
             ],
           ),
