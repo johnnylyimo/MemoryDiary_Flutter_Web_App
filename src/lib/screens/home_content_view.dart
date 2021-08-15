@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeContentView extends StatefulWidget {
   @override
@@ -422,7 +423,7 @@ class _HomeContentViewState extends State<HomeContentView> {
     );
   }
 
-  void _launchURL(String url) async {}
+  void _launchURL(String url) async => await canLaunch(url)?
 
   Widget desktopView() {
     return Container(
