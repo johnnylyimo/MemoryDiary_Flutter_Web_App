@@ -362,6 +362,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     ),
                     Row(
                       children: [
+                        Icon(),
                         Text(' 0763 291029'),
                       ],
                     ),
