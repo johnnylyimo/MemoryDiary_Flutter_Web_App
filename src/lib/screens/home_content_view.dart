@@ -322,7 +322,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                         letterSpacing: 0.5,
                       ),
                     ),
-                    SizedBox()
+                    SizedBox(
+                      height: 10.0,
+                    )
                   ],
                 ),
               )
