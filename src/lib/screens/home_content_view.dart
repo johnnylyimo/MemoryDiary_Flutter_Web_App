@@ -299,7 +299,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           letterSpacing: 0.5,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () => _launchURL(),
                     ),
                     TextButton(
                       child: Text(
