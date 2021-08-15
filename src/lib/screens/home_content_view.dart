@@ -346,6 +346,7 @@ class _HomeContentViewState extends State<HomeContentView> {
               ),
               Flexible(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       'Contact Me',
