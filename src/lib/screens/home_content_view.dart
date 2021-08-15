@@ -373,26 +373,28 @@ class _HomeContentViewState extends State<HomeContentView> {
           Divider(
             color: Colors.purple,
           ),
-          RichText(
-            text: TextSpan(
-              text: '©',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 24.0,
-              ),
-              children: [
-                TextSpan(
-                  text: '2021 ',
-                  style: TextStyle(
-                    fontSize: 20.0,
-                  ),
-                  children: [
-                    TextSpan(
-                      text: 'MolysTechie. All Rights Reserved.',
-                    ),
-                  ],
+          Flexible(
+            child: RichText(
+              text: TextSpan(
+                text: '©',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 24.0,
                 ),
-              ],
+                children: [
+                  TextSpan(
+                    text: '2021 ',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
+                    children: [
+                      TextSpan(
+                        text: 'MolysTechie. All Rights Reserved.',
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
           ),
         ],
