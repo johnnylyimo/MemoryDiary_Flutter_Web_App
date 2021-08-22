@@ -432,6 +432,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   Widget desktopView() {
     return Container(
       width: double.infinity,
+      height: 1024.0,
       margin: EdgeInsets.only(top: 20.0),
       padding: EdgeInsets.all(20.0),
       child: Column(
@@ -610,6 +611,7 @@ class _HomeContentViewState extends State<HomeContentView> {
               )
             ],
           ),
+          footer(),
         ],
       ),
     );
