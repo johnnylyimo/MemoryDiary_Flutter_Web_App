@@ -271,6 +271,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [],
                       )
                     ],
