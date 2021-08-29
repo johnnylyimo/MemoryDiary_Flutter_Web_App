@@ -262,13 +262,20 @@ class _HomeContentViewState extends State<HomeContentView> {
                 width: 10.0,
               ),
               Flexible(
-                  flex: 2,
-                  child: Container(
-                      height: 238.0,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      ))),
+                flex: 2,
+                child: Container(
+                  height: 238.0,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [],
+                      )
+                    ],
+                  ),
+                ),
+              ),
               Flexible(
                 child: Column(
                   children: [
