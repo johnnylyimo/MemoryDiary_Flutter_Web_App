@@ -635,7 +635,7 @@ class _HomeContentViewState extends State<HomeContentView> {
               ],
             ),
           ),
-          Flexible(child: footer()),
+          Flexible(child: footer(isMobile: false)),
         ],
       ),
     );
