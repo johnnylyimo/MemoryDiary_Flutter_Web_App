@@ -753,7 +753,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                   }),
             ),
           ),
-          footer()
+          footer(isMobile: true)
         ],
       ),
     );
