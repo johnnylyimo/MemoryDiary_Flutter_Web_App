@@ -272,98 +272,100 @@ class _HomeContentViewState extends State<HomeContentView> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [],
+                        children: [
+                          Flexible(
+                            child: Column(
+                              children: [
+                                Text(
+                                  'Follow Me',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14.0,
+                                    letterSpacing: 0.5,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 10.0,
+                                ),
+                                TextButton(
+                                  child: Text(
+                                    'Github',
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14.0,
+                                      letterSpacing: 0.5,
+                                    ),
+                                  ),
+                                  onPressed: () => _launchURL(
+                                      'https://github.com/johnnylyimo'),
+                                ),
+                                TextButton(
+                                  child: Text(
+                                    'Twitter',
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14.0,
+                                      letterSpacing: 0.5,
+                                    ),
+                                  ),
+                                  onPressed: () => _launchURL(
+                                      'https://twitter.com/johnnylyimo'),
+                                ),
+                                TextButton(
+                                  child: Text(
+                                    'LinkedIn',
+                                    style: TextStyle(
+                                      color: Colors.blue,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14.0,
+                                      letterSpacing: 0.5,
+                                    ),
+                                  ),
+                                  onPressed: () => _launchURL(
+                                      'https://www.linkedin.com/in/johnnylyimo'),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Flexible(
+                            flex: 2,
+                            child: Column(
+                              children: [
+                                Text(
+                                  'Visit',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14.0,
+                                    letterSpacing: 0.5,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 10.0,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.place),
+                                    Flexible(
+                                      child: Text(
+                                        'Buni at Costech Building, Sayansi, Dar-es-Salaam.',
+                                        textAlign: TextAlign.center,
+                                        maxLines: 5,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ],
                       )
                     ],
                   ),
-                ),
-              ),
-              Flexible(
-                child: Column(
-                  children: [
-                    Text(
-                      'Follow Me',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14.0,
-                        letterSpacing: 0.5,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    TextButton(
-                      child: Text(
-                        'Github',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14.0,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                      onPressed: () =>
-                          _launchURL('https://github.com/johnnylyimo'),
-                    ),
-                    TextButton(
-                      child: Text(
-                        'Twitter',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14.0,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                      onPressed: () =>
-                          _launchURL('https://twitter.com/johnnylyimo'),
-                    ),
-                    TextButton(
-                      child: Text(
-                        'LinkedIn',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 14.0,
-                          letterSpacing: 0.5,
-                        ),
-                      ),
-                      onPressed: () =>
-                          _launchURL('https://www.linkedin.com/in/johnnylyimo'),
-                    ),
-                  ],
-                ),
-              ),
-              Flexible(
-                child: Column(
-                  children: [
-                    Text(
-                      'Visit',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14.0,
-                        letterSpacing: 0.5,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Row(
-                      children: [
-                        Icon(Icons.place),
-                        Flexible(
-                          child: Text(
-                            'Buni at Costech Building, Sayansi, Dar-es-Salaam.',
-                            textAlign: TextAlign.center,
-                            maxLines: 5,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        )
-                      ],
-                    )
-                  ],
                 ),
               ),
               SizedBox(
