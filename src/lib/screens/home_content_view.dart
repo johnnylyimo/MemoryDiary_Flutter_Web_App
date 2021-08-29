@@ -270,6 +270,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [],
                       )
                     ],
