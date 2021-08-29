@@ -426,7 +426,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                               ),
                               children: [
                                 TextSpan(
-                                  text: 'MolysTechie. All Rights Reserved.',
+                                  text: 'MolysTechie. All Rights Reserved',
                                 ),
                               ],
                             ),
@@ -635,8 +635,7 @@ class _HomeContentViewState extends State<HomeContentView> {
               ],
             ),
           ),
-          Expanded(child: Container()),
-          footer(),
+          Flexible(child: footer()),
         ],
       ),
     );
