@@ -362,53 +362,54 @@ class _HomeContentViewState extends State<HomeContentView> {
                               ],
                             ),
                           ),
+                          SizedBox(
+                            width: 10.0,
+                          ),
+                          Flexible(
+                            flex: 2,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Contact Me',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14.0,
+                                    letterSpacing: 0.5,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 10.0,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(
+                                      Icons.local_phone,
+                                    ),
+                                    Flexible(
+                                      child: Text(' 0763 291029'),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 10.0,
+                                ),
+                                Row(
+                                  children: [
+                                    Icon(Icons.email),
+                                    Flexible(
+                                      child: Text(' molystechie@gmail.com'),
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       )
                     ],
                   ),
-                ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Flexible(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      'Contact Me',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14.0,
-                        letterSpacing: 0.5,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Row(
-                      children: [
-                        Icon(
-                          Icons.local_phone,
-                        ),
-                        Flexible(
-                          child: Text(' 0763 291029'),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 10.0,
-                    ),
-                    Row(
-                      children: [
-                        Icon(Icons.email),
-                        Flexible(
-                          child: Text(' molystechie@gmail.com'),
-                        ),
-                      ],
-                    ),
-                  ],
                 ),
               ),
             ],
