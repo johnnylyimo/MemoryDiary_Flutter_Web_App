@@ -335,7 +335,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                             child: Column(
                               children: [
                                 Text(
-                                  'Visit',
+                                  'Find Me',
                                   style: TextStyle(
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold,
