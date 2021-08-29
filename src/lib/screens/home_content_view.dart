@@ -218,7 +218,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   }
 
   // Footer widget
-  Widget footer() {
+  Widget footer({bool? isMobile}) {
     return Container(
       height: 350.0,
       width: double.infinity,
