@@ -238,7 +238,7 @@ class _HomeContentViewState extends State<HomeContentView> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Flexible(
-                flex: 2,
+                flex: 1,
                 child: Column(
                   children: [
                     Image(
