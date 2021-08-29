@@ -267,6 +267,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                       height: 238.0,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       ))),
               Flexible(
                 child: Column(
