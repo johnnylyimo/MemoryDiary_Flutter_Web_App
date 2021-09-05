@@ -385,6 +385,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   height: 10.0,
                                 ),
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(
                                       Icons.local_phone,
