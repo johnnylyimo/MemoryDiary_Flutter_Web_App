@@ -264,10 +264,12 @@ class _HomeContentViewState extends State<HomeContentView> {
               Flexible(
                 flex: 2,
                 child: Container(
+                  decoration:
+                      BoxDecoration(border: Border.all(color: Colors.black)),
                   height: 238.0,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
