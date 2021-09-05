@@ -264,8 +264,6 @@ class _HomeContentViewState extends State<HomeContentView> {
               Flexible(
                 flex: 2,
                 child: Container(
-                  decoration:
-                      BoxDecoration(border: Border.all(color: Colors.black)),
                   height: 238.0,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -399,6 +397,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   height: 10.0,
                                 ),
                                 Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(Icons.email),
                                     Flexible(
