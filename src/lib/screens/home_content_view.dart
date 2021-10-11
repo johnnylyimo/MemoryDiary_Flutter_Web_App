@@ -458,179 +458,181 @@ class _HomeContentViewState extends State<HomeContentView> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 360.0,
-                color: Colors.purple.shade200,
-                padding: EdgeInsets.all(5.0),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    RichText(
-                      textAlign: TextAlign.center,
-                      text: TextSpan(
-                        text: 'WORD OF THE DAY\n',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                        children: [
-                          TextSpan(
-                            text: 'Today will be better than yesterday',
-                          ),
-                        ],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    Container(
-                      padding: EdgeInsets.all(20.0),
-                      child: Form(
-                        key: _formKey,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Anytime something positive happens, make a note of it and come back to it later.',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 18.0,
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20.0,
-                            ),
-                            TextFormField(
-                              autofocus: true,
-                              controller: memoryController,
-                              maxLines: 5,
-                              keyboardType: TextInputType.multiline,
-                              textAlign: TextAlign.left,
-                              validator: (String? val) =>
-                                  val!.isNotEmpty ? null : 'Enter Memory',
-                              decoration: InputDecoration(
-                                labelText: 'Write new memory here',
-                                prefixIcon: Icon(
-                                  Icons.notes,
-                                  color: Colors.purple,
-                                ),
-                                labelStyle: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 24.0,
-                                ),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(10.0),
-                                  ),
-                                  borderSide: BorderSide(color: Colors.purple),
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 20.0,
-                            ),
-                            ElevatedButton(
-                              child: Text('Save'),
-                              onPressed: () {
-                                if (_formKey.currentState!.validate()) {
-                                  box!.add(memoryController.text);
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    SnackBar(
-                                      content: Text(
-                                        'New memory " ${memoryController.text.substring(0, memoryController.text.length)} " Saved!',
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  );
-                                  memoryController.clear();
-                                }
-                              },
-                            ),
-                            SizedBox(
-                              height: 20.0,
-                            ),
-                            Text(
-                              'Remember the good times',
-                              style: TextStyle(
-                                fontSize: 20.0,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                width: 50.0,
-              ),
-              Flexible(
-                child: Container(
-                  width: 700.0,
-                  padding: EdgeInsets.all(20.0),
+          Container(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 360.0,
+                  color: Colors.purple.shade200,
+                  padding: EdgeInsets.all(5.0),
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        'Hightlights',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          fontWeight: FontWeight.bold,
+                      RichText(
+                        textAlign: TextAlign.center,
+                        text: TextSpan(
+                          text: 'WORD OF THE DAY\n',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          children: [
+                            TextSpan(
+                              text: 'Today will be better than yesterday',
+                            ),
+                          ],
                         ),
                       ),
                       SizedBox(
                         height: 20.0,
                       ),
-                      Expanded(
-                        child: Container(
-                          child: ValueListenableBuilder(
-                            valueListenable: box!.listenable(),
-                            builder: (context, Box _box, _) {
-                              return _box.length != 0
-                                  ? ListView.builder(
-                                      itemCount: _box.length,
-                                      itemBuilder: (context, index) {
-                                        var memories = _box.toMap();
-                                        return Card(
-                                          child: ListTile(
-                                            leading: Icon(Icons.notes),
-                                            title: Text(
-                                              memories.values.elementAt(index),
-                                              maxLines: 2,
-                                            ),
-                                            trailing: IconButton(
-                                              icon: Icon(Icons.edit),
-                                              onPressed: () => EditDialog(
-                                                memories.values
-                                                    .elementAt(index),
-                                                memories.keys.elementAt(index),
-                                              ),
-                                            ),
-                                            onTap: () => EditDialog(
-                                              memories.values.elementAt(index),
-                                              memories.keys.elementAt(index),
-                                            ),
-                                          ),
-                                        );
-                                      },
-                                    )
-                                  : Text(
-                                      'No Memory\nAdd your memory by click plus button below');
-                            },
+                      Container(
+                        padding: EdgeInsets.all(20.0),
+                        child: Form(
+                          key: _formKey,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Anytime something positive happens, make a note of it and come back to it later.',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 18.0,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 20.0,
+                              ),
+                              TextFormField(
+                                autofocus: true,
+                                controller: memoryController,
+                                maxLines: 5,
+                                keyboardType: TextInputType.multiline,
+                                textAlign: TextAlign.left,
+                                validator: (String? val) =>
+                                    val!.isNotEmpty ? null : 'Enter Memory',
+                                decoration: InputDecoration(
+                                  labelText: 'Write new memory here',
+                                  prefixIcon: Icon(
+                                    Icons.notes,
+                                    color: Colors.purple,
+                                  ),
+                                  labelStyle: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 24.0,
+                                  ),
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(10.0),
+                                    ),
+                                    borderSide: BorderSide(color: Colors.purple),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                height: 20.0,
+                              ),
+                              ElevatedButton(
+                                child: Text('Save'),
+                                onPressed: () {
+                                  if (_formKey.currentState!.validate()) {
+                                    box!.add(memoryController.text);
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                          'New memory " ${memoryController.text.substring(0, memoryController.text.length)} " Saved!',
+                                          textAlign: TextAlign.center,
+                                        ),
+                                      ),
+                                    );
+                                    memoryController.clear();
+                                  }
+                                },
+                              ),
+                              SizedBox(
+                                height: 20.0,
+                              ),
+                              Text(
+                                'Remember the good times',
+                                style: TextStyle(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              )
+                            ],
                           ),
                         ),
                       ),
                     ],
                   ),
                 ),
-              )
-            ],
+                SizedBox(
+                  width: 50.0,
+                ),
+                Flexible(
+                  child: Container(
+                    width: 700.0,
+                    padding: EdgeInsets.all(20.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Hightlights',
+                          style: TextStyle(
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: ValueListenableBuilder(
+                              valueListenable: box!.listenable(),
+                              builder: (context, Box _box, _) {
+                                return _box.length != 0
+                                    ? ListView.builder(
+                                        itemCount: _box.length,
+                                        itemBuilder: (context, index) {
+                                          var memories = _box.toMap();
+                                          return Card(
+                                            child: ListTile(
+                                              leading: Icon(Icons.notes),
+                                              title: Text(
+                                                memories.values.elementAt(index),
+                                                maxLines: 2,
+                                              ),
+                                              trailing: IconButton(
+                                                icon: Icon(Icons.edit),
+                                                onPressed: () => EditDialog(
+                                                  memories.values
+                                                      .elementAt(index),
+                                                  memories.keys.elementAt(index),
+                                                ),
+                                              ),
+                                              onTap: () => EditDialog(
+                                                memories.values.elementAt(index),
+                                                memories.keys.elementAt(index),
+                                              ),
+                                            ),
+                                          );
+                                        },
+                                      )
+                                    : Text(
+                                        'No Memory\nAdd your memory by click plus button below');
+                              },
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
           ),
           Flexible(child: footer(isMobile: false)),
         ],
