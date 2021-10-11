@@ -389,7 +389,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                                       Icons.local_phone,
                                     ),
                                     Flexible(
-                                      child: Text(' 0763 291029'),
+                                      child: Text(' 0715 291029'),
                                     ),
                                   ],
                                 ),
