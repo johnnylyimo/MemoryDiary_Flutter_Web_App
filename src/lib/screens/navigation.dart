@@ -64,11 +64,13 @@ class _NavigationBarState extends State<NavigationBar>
           controller: tabController!,
           tabs: contentView.map((e) => e.tab).toList(),
         ),
-        Container(
-          height: screenHeight! * 0.9,
-          child: TabBarView(
-            controller: tabController,
-            children: contentView.map((e) => e.content).toList(),
+        Expanded(
+          child: Container(
+            // height: screenHeight! * 0.9,
+            child: TabBarView(
+              controller: tabController,
+              children: contentView.map((e) => e.content).toList(),
+            ),
           ),
         )
       ],
