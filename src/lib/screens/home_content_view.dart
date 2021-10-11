@@ -459,7 +459,7 @@ class _HomeContentViewState extends State<HomeContentView> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            height: 400.0,
+            height: 420.0,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -542,7 +542,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                   onPressed: () {
                                     if (_formKey.currentState!.validate()) {
                                       box!.add(memoryController.text);
-                                      ScaffoldMessenger.of(context).showSnackBar(
+                                      ScaffoldMessenger.of(context)
+                                          .showSnackBar(
                                         SnackBar(
                                           content: Text(
                                             'New memory " ${memoryController.text.substring(0, memoryController.text.length)} " Saved!',
