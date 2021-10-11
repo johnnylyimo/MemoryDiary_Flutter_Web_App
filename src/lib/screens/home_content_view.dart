@@ -464,110 +464,112 @@ class _HomeContentViewState extends State<HomeContentView> {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 360.0,
-                  color: Colors.purple.shade200,
-                  padding: EdgeInsets.all(5.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                          text: 'WORD OF THE DAY\n',
-                          style: TextStyle(
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: 'Today will be better than yesterday',
+                Expanded(
+                  child: Container(
+                    width: 360.0,
+                    color: Colors.purple.shade200,
+                    padding: EdgeInsets.all(5.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        RichText(
+                          textAlign: TextAlign.center,
+                          text: TextSpan(
+                            text: 'WORD OF THE DAY\n',
+                            style: TextStyle(
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.bold,
                             ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                      Container(
-                        padding: EdgeInsets.all(20.0),
-                        child: Form(
-                          key: _formKey,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
-                                'Anytime something positive happens, make a note of it and come back to it later.',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  fontSize: 18.0,
-                                ),
+                              TextSpan(
+                                text: 'Today will be better than yesterday',
                               ),
-                              SizedBox(
-                                height: 20.0,
-                              ),
-                              TextFormField(
-                                autofocus: true,
-                                controller: memoryController,
-                                maxLines: 5,
-                                keyboardType: TextInputType.multiline,
-                                textAlign: TextAlign.left,
-                                validator: (String? val) =>
-                                    val!.isNotEmpty ? null : 'Enter Memory',
-                                decoration: InputDecoration(
-                                  labelText: 'Write new memory here',
-                                  prefixIcon: Icon(
-                                    Icons.notes,
-                                    color: Colors.purple,
-                                  ),
-                                  labelStyle: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 24.0,
-                                  ),
-                                  border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(10.0),
-                                    ),
-                                    borderSide:
-                                        BorderSide(color: Colors.purple),
-                                  ),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 20.0,
-                              ),
-                              ElevatedButton(
-                                child: Text('Save'),
-                                onPressed: () {
-                                  if (_formKey.currentState!.validate()) {
-                                    box!.add(memoryController.text);
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                        content: Text(
-                                          'New memory " ${memoryController.text.substring(0, memoryController.text.length)} " Saved!',
-                                          textAlign: TextAlign.center,
-                                        ),
-                                      ),
-                                    );
-                                    memoryController.clear();
-                                  }
-                                },
-                              ),
-                              SizedBox(
-                                height: 20.0,
-                              ),
-                              Text(
-                                'Remember the good times',
-                                style: TextStyle(
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                              )
                             ],
                           ),
                         ),
-                      ),
-                    ],
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(20.0),
+                          child: Form(
+                            key: _formKey,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  'Anytime something positive happens, make a note of it and come back to it later.',
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 20.0,
+                                ),
+                                TextFormField(
+                                  autofocus: true,
+                                  controller: memoryController,
+                                  maxLines: 5,
+                                  keyboardType: TextInputType.multiline,
+                                  textAlign: TextAlign.left,
+                                  validator: (String? val) =>
+                                      val!.isNotEmpty ? null : 'Enter Memory',
+                                  decoration: InputDecoration(
+                                    labelText: 'Write new memory here',
+                                    prefixIcon: Icon(
+                                      Icons.notes,
+                                      color: Colors.purple,
+                                    ),
+                                    labelStyle: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: 24.0,
+                                    ),
+                                    border: OutlineInputBorder(
+                                      borderRadius: BorderRadius.all(
+                                        Radius.circular(10.0),
+                                      ),
+                                      borderSide:
+                                          BorderSide(color: Colors.purple),
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 20.0,
+                                ),
+                                ElevatedButton(
+                                  child: Text('Save'),
+                                  onPressed: () {
+                                    if (_formKey.currentState!.validate()) {
+                                      box!.add(memoryController.text);
+                                      ScaffoldMessenger.of(context).showSnackBar(
+                                        SnackBar(
+                                          content: Text(
+                                            'New memory " ${memoryController.text.substring(0, memoryController.text.length)} " Saved!',
+                                            textAlign: TextAlign.center,
+                                          ),
+                                        ),
+                                      );
+                                      memoryController.clear();
+                                    }
+                                  },
+                                ),
+                                SizedBox(
+                                  height: 20.0,
+                                ),
+                                Text(
+                                  'Remember the good times',
+                                  style: TextStyle(
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
                 SizedBox(
