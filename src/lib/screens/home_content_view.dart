@@ -459,6 +459,7 @@ class _HomeContentViewState extends State<HomeContentView> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
+            height: 400.0,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
@@ -527,7 +528,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                     borderRadius: BorderRadius.all(
                                       Radius.circular(10.0),
                                     ),
-                                    borderSide: BorderSide(color: Colors.purple),
+                                    borderSide:
+                                        BorderSide(color: Colors.purple),
                                   ),
                                 ),
                               ),
@@ -602,7 +604,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                             child: ListTile(
                                               leading: Icon(Icons.notes),
                                               title: Text(
-                                                memories.values.elementAt(index),
+                                                memories.values
+                                                    .elementAt(index),
                                                 maxLines: 2,
                                               ),
                                               trailing: IconButton(
@@ -610,11 +613,13 @@ class _HomeContentViewState extends State<HomeContentView> {
                                                 onPressed: () => EditDialog(
                                                   memories.values
                                                       .elementAt(index),
-                                                  memories.keys.elementAt(index),
+                                                  memories.keys
+                                                      .elementAt(index),
                                                 ),
                                               ),
                                               onTap: () => EditDialog(
-                                                memories.values.elementAt(index),
+                                                memories.values
+                                                    .elementAt(index),
                                                 memories.keys.elementAt(index),
                                               ),
                                             ),
