@@ -394,6 +394,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                   color: Colors.purple,
                 ),
                 RichText(
+                  textAlign: TextAlign.center,
                   text: TextSpan(
                     text: '©',
                     style: TextStyle(
@@ -458,8 +459,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Row(
-                              mainAxisAlignment:
-                                  MainAxisAlignment.spaceBetween,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Flexible(
@@ -548,8 +548,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                                               'Buni at Costech Building, Sayansi, Dar-es-Salaam.',
                                               textAlign: TextAlign.center,
                                               maxLines: 5,
-                                              overflow:
-                                                  TextOverflow.ellipsis,
+                                              overflow: TextOverflow.ellipsis,
                                             ),
                                           )
                                         ],
@@ -599,8 +598,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                         children: [
                                           Icon(Icons.email),
                                           Flexible(
-                                            child: Text(
-                                                ' molystechie@gmail.com'),
+                                            child:
+                                                Text(' molystechie@gmail.com'),
                                           ),
                                         ],
                                       ),
