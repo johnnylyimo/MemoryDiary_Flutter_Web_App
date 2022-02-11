@@ -8,8 +8,7 @@ class NavBar extends StatefulWidget {
   _NavBarState createState() => _NavBarState();
 }
 
-class _NavBarState extends State<NavBar>
-    with SingleTickerProviderStateMixin {
+class _NavBarState extends State<NavBar> with SingleTickerProviderStateMixin {
   TabController? tabController;
   var scaffoldKey = GlobalKey<ScaffoldState>();
   ItemScrollController? itemScrollController;
@@ -96,7 +95,13 @@ class _NavBarState extends State<NavBar>
               itemScrollController: itemScrollController,
               itemCount: contentView.length,
               itemBuilder: (context, index) {
-                return contentView[index].content;
+                //    Control mobile view body 
+                return Container(
+                  child: contentView[index].content,
+                  height: screenWidth! < 571 ? 1250:1150,
+                  // height: 1150.0,
+                  margin: EdgeInsets.only(bottom: 10.0),
+                );
               },
             ),
           )
