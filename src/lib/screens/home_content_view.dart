@@ -417,6 +417,7 @@ class _HomeContentViewState extends State<HomeContentView> {
                 ),
               ],
             )
+          // >>>>DESKTOP FOOTER
           : Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -457,7 +458,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Flexible(
@@ -517,6 +519,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                                     ],
                                   ),
                                 ),
+                                SizedBox(
+                                  width: 60.0,
+                                ),
                                 Flexible(
                                   flex: 2,
                                   child: Column(
@@ -534,6 +539,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                         height: 10.0,
                                       ),
                                       Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
                                         children: [
                                           Icon(Icons.place),
                                           Flexible(
@@ -541,7 +548,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                               'Buni at Costech Building, Sayansi, Dar-es-Salaam.',
                                               textAlign: TextAlign.center,
                                               maxLines: 5,
-                                              overflow: TextOverflow.ellipsis,
+                                              overflow:
+                                                  TextOverflow.ellipsis,
                                             ),
                                           )
                                         ],
@@ -591,8 +599,8 @@ class _HomeContentViewState extends State<HomeContentView> {
                                         children: [
                                           Icon(Icons.email),
                                           Flexible(
-                                            child:
-                                                Text(' molystechie@gmail.com'),
+                                            child: Text(
+                                                ' molystechie@gmail.com'),
                                           ),
                                         ],
                                       ),
