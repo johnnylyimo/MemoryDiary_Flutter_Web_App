@@ -220,7 +220,7 @@ class _HomeContentViewState extends State<HomeContentView> {
   // Footer widget
   Widget footer({bool? isMobile}) {
     return Container(
-      height: isMobile! ? 338.0 : 260.0,
+      height: isMobile! ? 640.0 : 260.0,
       width: double.infinity,
       margin: EdgeInsets.only(top: 10.0),
       padding: EdgeInsets.symmetric(
@@ -230,16 +230,11 @@ class _HomeContentViewState extends State<HomeContentView> {
       decoration: BoxDecoration(
         color: Colors.purple.withOpacity(0.13),
       ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Flexible(
-                flex: 1,
-                child: Column(
+      child: isMobile
+          ? Column(
+            mainAxisAlignment:MainAxisAlignment.spaceAround,
+              children: [
+                Column(
                   children: [
                     Image(
                       image: AssetImage('images/logo.PNG'),
@@ -257,192 +252,389 @@ class _HomeContentViewState extends State<HomeContentView> {
                     ),
                   ],
                 ),
-              ),
-              SizedBox(
-                width: 10.0,
-              ),
-              Flexible(
-                flex: 2,
-                child: Container(
-                  height: 238.0,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                SizedBox(
+                  height: 20.0,
+                ),
+                //Follow me
+                Column(
+                  children: [
+                    Text(
+                      'Follow Me',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
+                        letterSpacing: 0.5,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    TextButton(
+                      child: Text(
+                        'Github',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14.0,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                      onPressed: () =>
+                          _launchURL('https://github.com/johnnylyimo'),
+                    ),
+                    TextButton(
+                      child: Text(
+                        'Twitter',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14.0,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                      onPressed: () =>
+                          _launchURL('https://twitter.com/johnnylyimo'),
+                    ),
+                    TextButton(
+                      child: Text(
+                        'LinkedIn',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14.0,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                      onPressed: () =>
+                          _launchURL('https://www.linkedin.com/in/johnnylyimo'),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                // Find me
+                Column(
+                  children: [
+                    Text(
+                      'Find Me',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
+                        letterSpacing: 0.5,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.place),
+                        Flexible(
+                          child: Text(
+                            'Buni at Costech Building, Sayansi, Dar-es-Salaam.',
+                            textAlign: TextAlign.center,
+                            maxLines: 5,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                //Contact me
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Contact Me',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14.0,
+                        letterSpacing: 0.5,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.local_phone,
+                        ),
+                        Flexible(
+                          child: Text(' 0715 291029'),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 10.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.email),
+                        Flexible(
+                          child: Text(' molystechie@gmail.com'),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                //brand name
+                Divider(
+                  color: Colors.purple,
+                ),
+                RichText(
+                  text: TextSpan(
+                    text: '©',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24.0,
+                    ),
                     children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                      TextSpan(
+                        text: '2021 ',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                        ),
                         children: [
-                          Flexible(
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Follow Me',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14.0,
-                                    letterSpacing: 0.5,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 10.0,
-                                ),
-                                TextButton(
-                                  child: Text(
-                                    'Github',
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14.0,
-                                      letterSpacing: 0.5,
-                                    ),
-                                  ),
-                                  onPressed: () => _launchURL(
-                                      'https://github.com/johnnylyimo'),
-                                ),
-                                TextButton(
-                                  child: Text(
-                                    'Twitter',
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14.0,
-                                      letterSpacing: 0.5,
-                                    ),
-                                  ),
-                                  onPressed: () => _launchURL(
-                                      'https://twitter.com/johnnylyimo'),
-                                ),
-                                TextButton(
-                                  child: Text(
-                                    'LinkedIn',
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14.0,
-                                      letterSpacing: 0.5,
-                                    ),
-                                  ),
-                                  onPressed: () => _launchURL(
-                                      'https://www.linkedin.com/in/johnnylyimo'),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Flexible(
-                            flex: 2,
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Find Me',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14.0,
-                                    letterSpacing: 0.5,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 10.0,
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(Icons.place),
-                                    Flexible(
-                                      child: Text(
-                                        'Buni at Costech Building, Sayansi, Dar-es-Salaam.',
-                                        textAlign: TextAlign.center,
-                                        maxLines: 5,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ),
-                          SizedBox(
-                            width: 10.0,
-                          ),
-                          Flexible(
-                            flex: 2,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                Text(
-                                  'Contact Me',
-                                  style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14.0,
-                                    letterSpacing: 0.5,
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: 10.0,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Icon(
-                                      Icons.local_phone,
-                                    ),
-                                    Flexible(
-                                      child: Text(' 0715 291029'),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: 10.0,
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Icon(Icons.email),
-                                    Flexible(
-                                      child: Text(' molystechie@gmail.com'),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
+                          TextSpan(
+                            text: 'MolysTechie. All Rights Reserved',
                           ),
                         ],
-                      ),
-                      Divider(
-                        color: Colors.purple,
-                      ),
-                      RichText(
-                        text: TextSpan(
-                          text: '©',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 24.0,
-                          ),
-                          children: [
-                            TextSpan(
-                              text: '2021 ',
-                              style: TextStyle(
-                                fontSize: 20.0,
-                              ),
-                              children: [
-                                TextSpan(
-                                  text: 'MolysTechie. All Rights Reserved',
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
                       ),
                     ],
                   ),
                 ),
-              ),
-            ],
-          ),
-        ],
-      ),
+              ],
+            )
+          : Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Flexible(
+                      flex: 1,
+                      child: Column(
+                        children: [
+                          Image(
+                            image: AssetImage('images/logo.PNG'),
+                            width: 160.0,
+                            height: 114.0,
+                          ),
+                          SizedBox(
+                            height: 10.0,
+                          ),
+                          Text(
+                            "MolysTechie is tech startup, specialized on developing Mobile Apps, Web Apps and Wep APIs. It's senior Developer is John L. Lyimo, the guy who developed this Website that is powered by Flutter and hosted on GitHub pages.",
+                            textAlign: TextAlign.center,
+                            maxLines: 12,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Flexible(
+                      flex: 2,
+                      child: Container(
+                        height: 238.0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Flexible(
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        'Follow Me',
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 14.0,
+                                          letterSpacing: 0.5,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      TextButton(
+                                        child: Text(
+                                          'Github',
+                                          style: TextStyle(
+                                            color: Colors.blue,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14.0,
+                                            letterSpacing: 0.5,
+                                          ),
+                                        ),
+                                        onPressed: () => _launchURL(
+                                            'https://github.com/johnnylyimo'),
+                                      ),
+                                      TextButton(
+                                        child: Text(
+                                          'Twitter',
+                                          style: TextStyle(
+                                            color: Colors.blue,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14.0,
+                                            letterSpacing: 0.5,
+                                          ),
+                                        ),
+                                        onPressed: () => _launchURL(
+                                            'https://twitter.com/johnnylyimo'),
+                                      ),
+                                      TextButton(
+                                        child: Text(
+                                          'LinkedIn',
+                                          style: TextStyle(
+                                            color: Colors.blue,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 14.0,
+                                            letterSpacing: 0.5,
+                                          ),
+                                        ),
+                                        onPressed: () => _launchURL(
+                                            'https://www.linkedin.com/in/johnnylyimo'),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Flexible(
+                                  flex: 2,
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                        'Find Me',
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 14.0,
+                                          letterSpacing: 0.5,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      Row(
+                                        children: [
+                                          Icon(Icons.place),
+                                          Flexible(
+                                            child: Text(
+                                              'Buni at Costech Building, Sayansi, Dar-es-Salaam.',
+                                              textAlign: TextAlign.center,
+                                              maxLines: 5,
+                                              overflow: TextOverflow.ellipsis,
+                                            ),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 10.0,
+                                ),
+                                Flexible(
+                                  flex: 2,
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        'Contact Me',
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 14.0,
+                                          letterSpacing: 0.5,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(
+                                            Icons.local_phone,
+                                          ),
+                                          Flexible(
+                                            child: Text(' 0715 291029'),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 10.0,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(Icons.email),
+                                          Flexible(
+                                            child:
+                                                Text(' molystechie@gmail.com'),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Divider(
+                              color: Colors.purple,
+                            ),
+                            RichText(
+                              text: TextSpan(
+                                text: '©',
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 24.0,
+                                ),
+                                children: [
+                                  TextSpan(
+                                    text: '2021 ',
+                                    style: TextStyle(
+                                      fontSize: 20.0,
+                                    ),
+                                    children: [
+                                      TextSpan(
+                                        text:
+                                            'MolysTechie. All Rights Reserved',
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
     );
   }
 
@@ -723,42 +915,44 @@ class _HomeContentViewState extends State<HomeContentView> {
           SizedBox(
             height: 20.0,
           ),
-          Expanded(
-            child: Container(
-              child: ValueListenableBuilder(
-                  valueListenable: box!.listenable(),
-                  builder: (context, Box _box, _) {
-                    return _box.length != 0
-                        ? ListView.builder(
-                            itemCount: _box.length,
-                            itemBuilder: (context, index) {
-                              var memories = _box.toMap();
-                              return Card(
-                                child: ListTile(
-                                  leading: Icon(Icons.notes),
-                                  title: Text(
-                                    memories.values.elementAt(index),
-                                    maxLines: 2,
-                                  ),
-                                  trailing: IconButton(
-                                    icon: Icon(Icons.edit),
-                                    onPressed: () => EditDialog(
-                                      memories.values.elementAt(index),
-                                      memories.keys.elementAt(index),
-                                    ),
-                                  ),
-                                  onTap: () => EditDialog(
+          Container(   // << REMOVED WRAPPED EXPANDED 
+            height: 240.0,
+            child: ValueListenableBuilder(
+                valueListenable: box!.listenable(),
+                builder: (context, Box _box, _) {
+                  return _box.length != 0
+                      ? ListView.builder(
+                          itemCount: _box.length,
+                          itemBuilder: (context, index) {
+                            var memories = _box.toMap();
+                            return Card(
+                              child: ListTile(
+                                leading: Icon(Icons.notes),
+                                title: Text(
+                                  memories.values.elementAt(index),
+                                  maxLines: 2,
+                                ),
+                                trailing: IconButton(
+                                  icon: Icon(Icons.edit),
+                                  onPressed: () => EditDialog(
                                     memories.values.elementAt(index),
                                     memories.keys.elementAt(index),
                                   ),
                                 ),
-                              );
-                            },
-                          )
-                        : Text(
-                            'No Memory\nAdd your memory by click plus button above');
-                  }),
-            ),
+                                onTap: () => EditDialog(
+                                  memories.values.elementAt(index),
+                                  memories.keys.elementAt(index),
+                                ),
+                              ),
+                            );
+                          },
+                        )
+                      : Text(
+                          'No Memory\nAdd your memory by click plus button above');
+                }),
+          ),
+          SizedBox(
+            height: 20.0,
           ),
           footer(isMobile: true)
         ],
