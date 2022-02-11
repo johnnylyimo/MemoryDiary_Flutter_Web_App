@@ -20,6 +20,6 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.purple,
           scaffoldBackgroundColor: Colors.purple.shade100,
         ),
-        home: NavigationBar());
+        home: NavBar());
   }
 }
