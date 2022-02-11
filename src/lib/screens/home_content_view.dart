@@ -232,7 +232,7 @@ class _HomeContentViewState extends State<HomeContentView> {
       ),
       child: isMobile
           ? Column(
-            mainAxisAlignment:MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Column(
                   children: [
@@ -669,9 +669,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                           text: TextSpan(
                             text: 'WORD OF THE DAY\n',
                             style: TextStyle(
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold,
-                            ),
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black),
                             children: [
                               TextSpan(
                                 text: 'Today will be better than yesterday',
@@ -861,9 +861,9 @@ class _HomeContentViewState extends State<HomeContentView> {
                 text: TextSpan(
                   text: 'WORD OF THE DAY\n',
                   style: TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black),
                   children: [
                     TextSpan(
                       text: 'Today will be better than yesterday',
@@ -915,7 +915,8 @@ class _HomeContentViewState extends State<HomeContentView> {
           SizedBox(
             height: 20.0,
           ),
-          Container(   // << REMOVED WRAPPED EXPANDED 
+          Container(
+            // << REMOVED WRAPPED EXPANDED
             height: 240.0,
             child: ValueListenableBuilder(
                 valueListenable: box!.listenable(),
