@@ -98,9 +98,8 @@ class _NavBarState extends State<NavBar> with SingleTickerProviderStateMixin {
                 //    Control mobile view body 
                 return Container(
                   child: contentView[index].content,
-                  height: screenWidth! < 571 ? 1250:1150,
-                  // height: 1150.0,
-                  margin: EdgeInsets.only(bottom: 10.0),
+                  height: screenWidth! < 571 ? 1380:1150,
+                  margin: EdgeInsets.only(bottom: 20.0),
                 );
               },
             ),
